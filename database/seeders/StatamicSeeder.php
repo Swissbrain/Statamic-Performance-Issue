@@ -9,6 +9,7 @@ use Statamic\Eloquent\Globals\GlobalSetModel;
 use Statamic\Eloquent\Globals\VariablesModel;
 use Statamic\Eloquent\Structures\NavModel;
 use Statamic\Eloquent\Structures\TreeModel;
+use Statamic\Facades\File;
 
 class StatamicSeeder extends Seeder
 {
@@ -328,6 +329,7 @@ class StatamicSeeder extends Seeder
                 'path' => 'test.jpg',
                 'meta' => '{"data":[],"size":179816,"last_modified":1749128896,"width":1472,"height":832,"mime_type":"image\/jpeg","duration":null}'
             ]);
+            mkdir(storage_path('app/public/images'));
             copy(public_path('test.jpg'), storage_path('app/public/images/test.jpg'));
         }
 
