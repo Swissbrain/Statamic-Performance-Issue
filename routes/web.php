@@ -15,8 +15,3 @@ Route::prefix('/jura/offerte/')->where(['quote' => '[A-Za-z0-9]{32}'])->group(fu
     Route::post('/', [QuoteController::class, 'store'])->name('quote.store');
     Route::get('/{quote}/confirmed', [QuoteController::class, 'confirmed'])->name('quote.confirmed');
 });
-
-Route::get('test', function() {
-    $container = \Statamic\Facades\AssetContainer::find('test2');
-    dd($container);
-});
