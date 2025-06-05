@@ -1,0 +1,23 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: Redirects
+        instructions: "Redirect URL's only when a 404 error hits."
+        fields:
+          -
+            import: 'statamic-peak-seo::globals_redirects_redirects'
+      - display: 'System pages'
+        instructions: 'Configure system pages.'
+        fields:
+          - handle: error_404_entry
+            field: common.entry
+            config:
+              display: '404'
+              width: 50
+              instructions: 'Show all content of page whenever an URL does not exist.'
+              collections:
+                - website
+              validate:
+                - required

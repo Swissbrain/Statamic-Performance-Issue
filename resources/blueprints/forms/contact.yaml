@@ -1,0 +1,33 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              display: Name
+              type: text
+              validate:
+                - required
+                - 'min:2'
+              localizable: true
+          -
+            handle: email
+            field:
+              display: 'Email address'
+              type: text
+              validate:
+                - required
+                - email
+              localizable: true
+          -
+            handle: message_body
+            field:
+              display: Message
+              type: textarea
+              validate:
+                - required
+                - 'min:5'
+              localizable: true

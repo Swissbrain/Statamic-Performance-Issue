@@ -1,0 +1,33 @@
+title: Integrationen
+fields:
+  -
+    handle: integrations
+    field:
+      type: replicator
+      display: Integrationen
+      collapse: true
+      sets:
+        neue_set-gruppe:
+          display: '-'
+          sets:
+            platform:
+              display: Platform
+              fields:
+                -
+                  handle: logo
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: images
+                    type: assets
+                    display: Logo
+                    replicator_preview: false
+                -
+                  handle: link
+                  field:
+                    collections:
+                      - website
+                    container: images
+                    type: link
+                    display: Verlinkung
+                    replicator_preview: false

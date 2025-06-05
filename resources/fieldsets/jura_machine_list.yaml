@@ -1,0 +1,23 @@
+title: 'Jura Maschine Auflistung'
+fields:
+  -
+    handle: category
+    field:
+      options:
+        -
+          key: household
+          value: Haushalt
+        -
+          key: professional
+          value: Professional
+      default: household
+      type: select
+      display: Kategorie
+  -
+    handle: cols_per_row
+    field:
+      min: 3
+      max: 6
+      type: range
+      display: 'Anzahl Produkte pro Zeile'
+      replicator_preview: false

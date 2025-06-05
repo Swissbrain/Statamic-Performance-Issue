@@ -1,0 +1,15 @@
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        fields:
+          -
+            handle: confirm_page
+            field:
+              max_items: 1
+              collections:
+                - website
+              type: entries
+              display: Bestätigungsseite
+              replicator_preview: false

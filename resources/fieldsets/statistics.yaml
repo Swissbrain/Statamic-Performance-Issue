@@ -1,0 +1,38 @@
+title: Statistiken
+fields:
+  -
+    handle: metrics
+    field:
+      type: replicator
+      display: Metriken
+      replicator_preview: false
+      sets:
+        neue_set-gruppe:
+          display: 'Neue Set-Gruppe'
+          sets:
+            metric:
+              display: Metrik
+              fields:
+                -
+                  handle: icon
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: images
+                    type: assets
+                    display: Icon
+                    replicator_preview: false
+                -
+                  handle: stat_value
+                  field:
+                    type: text
+                    display: Wert
+                    width: 50
+                    replicator_preview: false
+                -
+                  handle: definition
+                  field:
+                    type: text
+                    display: Definition
+                    width: 50
+                    replicator_preview: false

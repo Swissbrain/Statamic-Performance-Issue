@@ -1,0 +1,34 @@
+title: 'Titel / Untertitel'
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: subtitle
+    field:
+      type: text
+      display: Subtitle
+      replicator_preview: false
+  -
+    handle: title_positioning
+    field:
+      options:
+        left: Links
+        center: Mitte
+        right: Rechts
+      default: center
+      type: button_group
+      display: Positionierung
+      replicator_preview: false
+      width: 50
+  -
+    handle: show_in_bold
+    field:
+      type: toggle
+      display: 'Fetter darstellen'
+      width: 50
+      replicator_preview: false
+  -
+    import: section_options

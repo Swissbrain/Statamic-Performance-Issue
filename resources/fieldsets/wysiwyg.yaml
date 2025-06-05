@@ -1,0 +1,31 @@
+title: Wysiwyg
+fields:
+  -
+    handle: wysiwyg
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+      save_html: true
+      allow_source: false
+      remove_empty_nodes: false
+      target_blank: true
+      collapse: true
+      type: bard
+      display: Beschreibung
+      replicator_preview: false
+  -
+    import: section_options

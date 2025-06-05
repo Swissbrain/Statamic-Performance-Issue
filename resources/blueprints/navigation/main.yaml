@@ -1,0 +1,54 @@
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        fields:
+          -
+            handle: show_badge
+            field:
+              type: toggle
+              display: 'Anstecker anzeigen'
+              width: 33
+          -
+            handle: badge_text
+            field:
+              type: text
+              display: 'Anstecker Text'
+              width: 33
+              if:
+                show_badge: 'equals true'
+          -
+            handle: badge_color
+            field:
+              options:
+                -
+                  key: red
+                  value: Rot
+                -
+                  key: blue
+                  value: Blau
+                -
+                  key: yellow
+                  value: Gelb
+                -
+                  key: green
+                  value: Grün
+              clearable: true
+              searchable: false
+              type: select
+              display: 'Anstecker Farbe'
+              width: 33
+              if:
+                show_badge: 'equals true'
+              default: green
+          -
+            handle: image
+            field:
+              border: false
+              type: group
+              display: image
+              hide_display: true
+              fields:
+                -
+                  import: image

@@ -1,0 +1,223 @@
+title: 'Content Builder'
+fields:
+  -
+    handle: content_builder
+    field:
+      type: replicator
+      display: 'Dynamische Layout Elemente'
+      collapse: true
+      replicator_preview: false
+      sets:
+        text_and_image:
+          display: 'Text, Bilder & Videos'
+          icon: text-formatting-wrap-image-left
+          sets:
+            page_title:
+              display: 'Seitentitel (H1)'
+              icon: text-formatting-all-caps
+              fields:
+                -
+                  handle: direction
+                  field:
+                    options:
+                      -
+                        key: left
+                        value: Links
+                      -
+                        key: center
+                        value: Zentriert
+                      -
+                        key: right
+                        value: Rechts
+                    default: left
+                    type: button_group
+                    display: Ausrichtung
+                -
+                  import: section_options
+            title_subtitle:
+              display: Titel/Untertitel
+              icon: text-formatting-text-box-1
+              fields:
+                -
+                  import: title_subtitle
+            wysiwyg:
+              display: 'Text Editor'
+              icon: text-formatting-all-caps
+              fields:
+                -
+                  import: wysiwyg
+            image:
+              display: Bild
+              icon: media-image-picture-orientation
+              fields:
+                -
+                  import: image
+            image_grid:
+              display: 'Bild Raster'
+              icon: layout-display-split-quarters
+              fields:
+                -
+                  import: image_grid
+            image_slider:
+              display: 'Bild Slider'
+              icon: media-image-picture-orientation
+              fields:
+                -
+                  import: image_slider
+            video:
+              display: Video
+              icon: media-webcam-video
+              fields:
+                -
+                  import: video
+            newness:
+              display: 'Neuheiten / Präsentationen'
+              icon: media-computer-screen-tv
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Titel
+                -
+                  handle: items
+                  field:
+                    type: replicator
+                    display: 'Replikator Feld'
+                    hide_display: true
+                    sets:
+                      neue_setgruppe:
+                        display: 'Neue Setgruppe'
+                        sets:
+                          items:
+                            display: Element
+                            fields:
+                              -
+                                handle: image
+                                field:
+                                  max_files: 1
+                                  container: images
+                                  type: assets
+                                  display: Bild
+                                  instructions: 'Ideale Grösse: 600 x 600 Pixel'
+                                  replicator_preview: false
+                              -
+                                handle: title
+                                field:
+                                  type: text
+                                  display: Titel
+                              -
+                                handle: wysiwyg
+                                field:
+                                  allow_source: false
+                                  remove_empty_nodes: false
+                                  type: bard
+                                  display: Text
+                                  replicator_preview: false
+                                  buttons:
+                                    - h2
+                                    - h3
+                                    - bold
+                                    - italic
+                                    - unorderedlist
+                                    - orderedlist
+                                    - removeformat
+                                    - quote
+                                    - anchor
+                                    - image
+                                    - table
+                                    - alignleft
+                                    - aligncenter
+                                    - alignright
+                                    - alignjustify
+                              -
+                                handle: link
+                                field:
+                                  type: link
+                                  display: Verlinkung
+                                  width: 75
+                                  replicator_preview: false
+                              -
+                                handle: target_blank
+                                field:
+                                  type: toggle
+                                  display: 'Link in neuem Tab öffnen?'
+                                  width: 25
+                                  replicator_preview: false
+                -
+                  import: section_options
+        design_elements:
+          display: 'Struktur Elemente'
+          icon: dashboard-layout-3
+          sets:
+            divider:
+              display: Trennlinie
+              icon: align-object-center
+              fields:
+                -
+                  import: divider
+            columns:
+              display: Spalten
+              icon: layout-three-columns
+              fields:
+                -
+                  import: columns
+            tabs:
+              display: Tabs
+              icon: layout-table-column-insert
+              fields:
+                -
+                  import: tabs
+        interaction:
+          display: Interaktion
+          icon: link
+          sets:
+            button:
+              display: Buttons
+              icon: link
+              fields:
+                -
+                  import: links
+                -
+                  import: section_options
+            rental_request:
+              display: Mietanfrage
+              fields:
+                -
+                  import: rental_request
+        application_specific:
+          display: Makaris
+          icon: mail-sign-hashtag
+          sets:
+            product_grid:
+              display: 'Produkt Raster'
+              icon: dashboard-layout
+              fields:
+                -
+                  import: product_grid
+        jura:
+          display: 'Jura Welt'
+          icon: addon-boxes-stack
+          sets:
+            jura_machine_list:
+              display: 'Maschine Auflistung'
+              icon: layout-split-horizontal
+              fields:
+                -
+                  import: jura_machine_list
+        social_media:
+          display: 'Social Media'
+          icon: social-facebook
+          sets:
+            instagram_feed:
+              display: 'Instagram Feed'
+              icon: social-instagram
+              fields:
+                -
+                  import: instagram_feed
+            google_reviews:
+              display: 'Google Rezensionen'
+              icon: social-share
+              fields:
+                -
+                  import: gogole_reviews

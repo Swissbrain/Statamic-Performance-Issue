@@ -1,0 +1,32 @@
+title: Features
+fields:
+  -
+    handle: features
+    field:
+      collapse: true
+      type: replicator
+      display: Features
+      replicator_preview: false
+      sets:
+        content:
+          display: Inhalt
+          sets:
+            feature:
+              display: Feature
+              fields:
+                -
+                  handle: icon
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: images
+                    type: assets
+                    display: Icon
+                    replicator_preview: false
+                -
+                  handle: name
+                  field:
+                    type: text
+                    display: Name
+                -
+                  import: sub_content_builder

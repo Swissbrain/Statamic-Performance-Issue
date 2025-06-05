@@ -1,0 +1,108 @@
+title: 'Erweiterte Einstellungen'
+fields:
+  -
+    handle: show_advanced_settings
+    field:
+      mode: toggle
+      type: revealer
+      display: 'Erweiterte Einstellungen'
+      replicator_preview: false
+  -
+    handle: visibility
+    field:
+      fullscreen: false
+      type: group
+      display: Sichtbarkeit
+      replicator_preview: false
+      always_save: true
+      if:
+        show_advanced_settings: 'equals true'
+      fields:
+        -
+          handle: mobile
+          field:
+            inline_label: Versteckt
+            inline_label_when_true: Sichtbar
+            default: true
+            type: toggle
+            display: Mobile
+            width: 25
+            replicator_preview: false
+        -
+          handle: tablet
+          field:
+            inline_label: Versteckt
+            inline_label_when_true: Sichtbar
+            default: true
+            type: toggle
+            display: Tablet
+            width: 25
+            replicator_preview: false
+        -
+          handle: laptop
+          field:
+            inline_label: Versteckt
+            inline_label_when_true: Sichtbar
+            default: true
+            type: toggle
+            display: Laptop
+            width: 25
+            replicator_preview: false
+        -
+          handle: desktop
+          field:
+            inline_label: Versteckt
+            inline_label_when_true: Sichtbar
+            default: true
+            type: toggle
+            display: Desktop
+            width: 25
+            replicator_preview: false
+  -
+    handle: space_top
+    field:
+      options:
+        -
+          key: none
+          value: 'Kein Abstand'
+        -
+          key: small
+          value: Klein
+        -
+          key: medium
+          value: Mittel
+        -
+          key: large
+          value: Gross
+      default: medium
+      type: select
+      display: 'Abstand oberhalb'
+      width: 50
+      replicator_preview: false
+      if:
+        show_advanced_settings: 'equals true'
+      always_save: true
+  -
+    handle: space_bottom
+    field:
+      options:
+        -
+          key: none
+          value: 'Kein Abstand'
+        -
+          key: small
+          value: Klein
+        -
+          key: medium
+          value: Mittel
+        -
+          key: large
+          value: Gross
+      default: medium
+      type: select
+      display: 'Abstand unterhalb'
+      width: 50
+      replicator_preview: false
+      if:
+        show_advanced_settings: 'equals true'
+      always_save: true

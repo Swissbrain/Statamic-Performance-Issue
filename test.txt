@@ -1,0 +1,1719 @@
+{
+    "title": "Home",
+    "og_image": null,
+    "og_title": null,
+    "subtitle": null,
+    "seo_title": null,
+    "updated_by": 1,
+    "seo_noindex": false,
+    "page_builder": [],
+    "seo_nofollow": false,
+    "schema_jsonld": null,
+    "og_description": null,
+    "seo_description": null,
+    "sitemap_priority": 0.5,
+    "seo_canonical_type": "entry",
+    "seo_canonical_current": null,
+    "show_subcontent_title": false,
+    "seo_canonical_external": null,
+    "sitemap_change_frequency": "weekly",
+    "header_title_background_image": null,
+    "content_builder": [
+        {
+            "id": "m3e8ocgj",
+            "animate_images": true,
+            "show_pagination": true,
+            "show_navigation": true,
+            "center_slider": false,
+            "aspect_ratio": "three_to_one",
+            "entry_type": "image_with_link",
+            "images": [
+                "test.jpg",
+                "test.jpg"
+            ],
+            "type": "image_slider",
+            "enabled": true,
+            "width": 25,
+            "height": 11,
+            "slides": [
+                {
+                    "id": "m7iu37of",
+                    "setting_buttons": "title",
+                    "image": "test.jpg",
+                    "image_color_overlay": {
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30
+                    },
+                    "entry_title": "Kaffeemaschinen und Service\nf\u00fcr jedes Bed\u00fcrfnis",
+                    "text_position": "bottom-center",
+                    "text_alignment": "left",
+                    "font_color": "#ffffff",
+                    "linking": {
+                        "link": null,
+                        "link_text": null,
+                        "title": null,
+                        "direction": "left",
+                        "variant": "primary",
+                        "target_blank": false,
+                        "spacer_feld": null,
+                        "icon": null,
+                        "icon_position": "left",
+                        "show_advanced_settings": null,
+                        "visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "space_top": "medium",
+                        "space_bottom": "medium"
+                    },
+                    "type": "entry",
+                    "enabled": true
+                },
+                {
+                    "id": "m3o7uemv",
+                    "setting_buttons": "image",
+                    "image": "test.jpg",
+                    "image_color_overlay": {
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30
+                    },
+                    "entry_title": "Immer Zeit f\u00fcr ein Gespr\u00e4ch",
+                    "entry_subtitle": "Unsere Kunden liegen uns am Herzen",
+                    "text_position": "center-center",
+                    "text_alignment": "left",
+                    "font_color": "#000000",
+                    "linking": {
+                        "link": "tel:0712448030",
+                        "link_text": "Beratungsgespr\u00e4ch buchen",
+                        "title": null,
+                        "direction": "left",
+                        "variant": "primary",
+                        "target_blank": false,
+                        "spacer_feld": null,
+                        "icon": "phone",
+                        "icon_position": "left",
+                        "show_advanced_settings": null,
+                        "visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "space_top": "medium",
+                        "space_bottom": "medium"
+                    },
+                    "type": "entry",
+                    "enabled": true,
+                    "button_alignment": "right"
+                },
+                {
+                    "id": "m3ohlgp6",
+                    "setting_buttons": "image",
+                    "image": "test.jpg",
+                    "image_color_overlay": {
+                        "use_color_overlay": true,
+                        "color": "#000000",
+                        "opacity": 6
+                    },
+                    "text_alignment": "left",
+                    "font_color": "#ffffff",
+                    "linking": {
+                        "link": null,
+                        "link_text": null,
+                        "title": null,
+                        "direction": "left",
+                        "variant": "primary",
+                        "target_blank": false,
+                        "spacer_feld": null,
+                        "icon": null,
+                        "icon_position": "left",
+                        "show_advanced_settings": null,
+                        "visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "space_top": "medium",
+                        "space_bottom": "medium"
+                    },
+                    "type": "entry",
+                    "enabled": true,
+                    "entry_title": "Grosse Auswahl in unserem Gesch\u00e4ft",
+                    "text_position": "center-center"
+                }
+            ],
+            "space_top": "none",
+            "space_bottom": "medium",
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m7erzce4",
+            "title": "Die richtige Wahl ist entscheidend",
+            "subtitle": "Jeder Kaffee ist so perfekt wie die Maschine",
+            "title_positioning": "center",
+            "show_in_bold": false,
+            "space_top": "medium",
+            "space_bottom": "medium",
+            "type": "title_subtitle",
+            "enabled": true,
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m7es2zgu",
+            "wysiwyg": "<p style=\"text-align: center;\">Ein Siebtr\u00e4ger oder doch lieber einen Vollautomaten? Beide Kaffeesysteme haben in jeder Hinsicht ihren Reiz; Design, Zubereitungsart, technologische Finessen und vieles mehr.<br>So vielf\u00e4ltig wie die Kaffeemaschinen und Vorlieben ist auch unser Sortiment und die Beratung. Inklusive Vermietung an Events. Schauen Sie einfach <a target=\"_blank\" href=\"https:\/\/maps.app.goo.gl\/QBeJR7PgoBcTM8nx6\">vorbei <\/a>oder schnuppern Sie in unserem <a target=\"_blank\" href=\"https:\/\/shop.kafi.ch\/de\/categories\">Shop<\/a>. <br><br><\/p>",
+            "space_top": "medium",
+            "space_bottom": "medium",
+            "type": "wysiwyg",
+            "enabled": true,
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m7f0gryv",
+            "variation": "solid",
+            "thickness": "1px",
+            "width": "medium",
+            "with_logo": true,
+            "space_top": "medium",
+            "space_bottom": "large",
+            "type": "divider",
+            "enabled": true,
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m3e72efo",
+            "columns": 3,
+            "image_setting": {
+                "aspect_ratio": "two_to_one",
+                "description_1_1": null,
+                "description_2_1": null,
+                "description_3_1": null,
+                "description_4_1": null,
+                "description_custom": null,
+                "width": null,
+                "height": null
+            },
+            "images": [
+                {
+                    "id": "m3e72hnc",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": "Siebtr\u00e4ger",
+                        "subtitle": "Jetzt ist die richtige Zeit zum Kaufen. Gewinnen Sie jetzt einen Gutschein f\u00fcr eine Siebtr\u00e4germaschine",
+                        "text_fuer_backend_feld": null,
+                        "text_position": "center-center",
+                        "text_alignment": "left",
+                        "variant": "lines"
+                    },
+                    "link_setting": {
+                        "linking_link": "entry::9",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": true,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "image": "test.jpg",
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m3e72m3i",
+                    "settings": "title",
+                    "title_setting": {
+                        "title": "Vollautomaten",
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": "center-center",
+                        "text_alignment": "center",
+                        "variant": "lines"
+                    },
+                    "link_setting": {
+                        "linking_link": "entry::10",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": true,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "image": "test.jpg",
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m3e72nyt",
+                    "image": "test.jpg",
+                    "settings": "title",
+                    "title_setting": {
+                        "title": "JURA Kaffeewelt",
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": "center-center",
+                        "text_alignment": "left",
+                        "variant": "lines"
+                    },
+                    "link_setting": {
+                        "linking_link": "entry::3",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": true,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m7eqcdjw",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": "M\u00fchlen & Zubeh\u00f6r",
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": "center-center",
+                        "text_alignment": "center",
+                        "variant": "lines"
+                    },
+                    "link_setting": {
+                        "linking_link": "entry::32",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "two_to_one",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": true,
+                        "color": "#000000",
+                        "opacity": 37,
+                        "full_width": false
+                    },
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "type": "image",
+                    "enabled": true,
+                    "image": "test.jpg",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m7envb1k",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": "Service",
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": "center-center",
+                        "text_alignment": "center",
+                        "variant": "lines"
+                    },
+                    "link_setting": {
+                        "linking_link": "entry::12",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "one_to_one",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "type": "image",
+                    "enabled": true,
+                    "image": "test.jpg",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m7eqwjm1",
+                    "image": "test.jpg",
+                    "settings": "title",
+                    "title_setting": {
+                        "title": "Kaffeebohnen",
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": "center-center",
+                        "text_alignment": "center",
+                        "variant": "lines"
+                    },
+                    "link_setting": {
+                        "linking_link": null,
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "two_to_one",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "type": "image",
+                    "enabled": true,
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                }
+            ],
+            "type": "image_grid",
+            "enabled": true,
+            "space_top": "medium",
+            "space_bottom": "medium",
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m7exys5x",
+            "variation": "solid",
+            "thickness": "1px",
+            "space_top": "large",
+            "space_bottom": "medium",
+            "type": "divider",
+            "enabled": true,
+            "width": "medium",
+            "with_logo": false,
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m7ey7pg2",
+            "columns": [
+                {
+                    "id": "m7ey7r1k",
+                    "column_size": "1\/2",
+                    "sub_content_builder": [
+                        {
+                            "id": "m7ey7zmb",
+                            "title": "Rafinesse und Eleganz",
+                            "subtitle": "Von Espresso bis Milchkaffee",
+                            "title_positioning": "center",
+                            "show_in_bold": false,
+                            "space_top": "medium",
+                            "space_bottom": "medium",
+                            "type": "title_subtitle",
+                            "enabled": true,
+                            "visibility": {
+                                "mobile": true,
+                                "tablet": true,
+                                "laptop": true,
+                                "desktop": true
+                            }
+                        },
+                        {
+                            "id": "m7ey9kng",
+                            "wysiwyg": "<p>Genuss auf Knopfdruck: Mit einem Vollautomaten holen Sie das Beste aus jeder Bohne \u2013 frisch gemahlen, individuell abgestimmt, und immer in Top-Qualit\u00e4t. Die Maschine passt sich Ihren W\u00fcnschen an: von der Br\u00fchst\u00e4rke bis zur Kaffeemenge. Keine Kompromisse, keine halben Sachen. Ein Vollautomat macht jeden Tag ein bisschen besser \u2013 und jede Tasse zu einem echten Highlight.<\/p>",
+                            "space_top": "medium",
+                            "space_bottom": "medium",
+                            "type": "wysiwyg",
+                            "enabled": true,
+                            "visibility": {
+                                "mobile": true,
+                                "tablet": true,
+                                "laptop": true,
+                                "desktop": true
+                            }
+                        },
+                        {
+                            "id": "m7kb7wod",
+                            "positioning": "center",
+                            "links": [
+                                {
+                                    "id": "m7kb81u7",
+                                    "link_text": "Jura Vollautomaten",
+                                    "direction": "left",
+                                    "variant": "primary",
+                                    "target_blank": false,
+                                    "icon": "shopping-cart",
+                                    "icon_position": "left",
+                                    "space_top": "medium",
+                                    "space_bottom": "medium",
+                                    "type": "link",
+                                    "enabled": true,
+                                    "visibility": {
+                                        "mobile": true,
+                                        "tablet": true,
+                                        "laptop": true,
+                                        "desktop": true
+                                    }
+                                },
+                                {
+                                    "id": "m7kb8xi1",
+                                    "link_text": "Andere Vollautomaten",
+                                    "direction": "left",
+                                    "variant": "primary",
+                                    "target_blank": false,
+                                    "icon_position": "left",
+                                    "space_top": "medium",
+                                    "space_bottom": "medium",
+                                    "type": "link",
+                                    "enabled": true,
+                                    "icon": "shopping-bag",
+                                    "visibility": {
+                                        "mobile": true,
+                                        "tablet": true,
+                                        "laptop": true,
+                                        "desktop": true
+                                    }
+                                }
+                            ],
+                            "type": "buttons",
+                            "enabled": true
+                        }
+                    ],
+                    "type": "column",
+                    "enabled": true
+                },
+                {
+                    "id": "m7eyktnk",
+                    "column_size": "1\/2",
+                    "sub_content_builder": [
+                        {
+                            "id": "m7eykyhi",
+                            "image": "test.jpg",
+                            "settings": "image",
+                            "title_setting": {
+                                "title": null,
+                                "subtitle": null,
+                                "text_fuer_backend_feld": null,
+                                "text_position": null,
+                                "text_alignment": "left",
+                                "variant": "simple"
+                            },
+                            "link_setting": {
+                                "linking_link": null,
+                                "linking_link_text": null,
+                                "linking_title": null,
+                                "linking_direction": "left",
+                                "linking_variant": "primary",
+                                "linking_target_blank": false,
+                                "linking_spacer_feld": null,
+                                "linking_icon": null,
+                                "linking_icon_position": "left",
+                                "linking_show_advanced_settings": null,
+                                "linking_visibility": {
+                                    "mobile": true,
+                                    "tablet": true,
+                                    "laptop": true,
+                                    "desktop": true
+                                },
+                                "linking_space_top": "medium",
+                                "linking_space_bottom": "medium"
+                            },
+                            "image_setting": {
+                                "aspect_ratio": "two_to_one",
+                                "description_1_1": null,
+                                "description_2_1": null,
+                                "description_3_1": null,
+                                "description_4_1": null,
+                                "beschreibung_benutzerdefiniert": null,
+                                "width": 1,
+                                "height": 1,
+                                "use_color_overlay": false,
+                                "color": "#000000",
+                                "opacity": 30,
+                                "full_width": false
+                            },
+                            "space_top": "medium",
+                            "space_bottom": "medium",
+                            "type": "image",
+                            "enabled": true,
+                            "visibility": {
+                                "mobile": true,
+                                "tablet": true,
+                                "laptop": true,
+                                "desktop": true
+                            }
+                        }
+                    ],
+                    "type": "column",
+                    "enabled": true
+                }
+            ],
+            "space_top": "large",
+            "space_bottom": "large",
+            "type": "columns",
+            "enabled": true,
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m7ex1js5",
+            "space_top": "large",
+            "space_bottom": "large",
+            "type": "columns",
+            "enabled": true,
+            "columns": [
+                {
+                    "id": "m7ex6zkc",
+                    "column_size": "1\/2",
+                    "sub_content_builder": [
+                        {
+                            "id": "m7exprpa",
+                            "settings": "image",
+                            "title_setting": {
+                                "title": null,
+                                "subtitle": null,
+                                "text_fuer_backend_feld": null,
+                                "text_position": null,
+                                "text_alignment": "left",
+                                "variant": "simple"
+                            },
+                            "link_setting": {
+                                "linking_link": null,
+                                "linking_link_text": null,
+                                "linking_title": null,
+                                "linking_direction": "left",
+                                "linking_variant": "primary",
+                                "linking_target_blank": false,
+                                "linking_spacer_feld": null,
+                                "linking_icon": null,
+                                "linking_icon_position": "left",
+                                "linking_show_advanced_settings": null,
+                                "linking_visibility": {
+                                    "mobile": true,
+                                    "tablet": true,
+                                    "laptop": true,
+                                    "desktop": true
+                                },
+                                "linking_space_top": "medium",
+                                "linking_space_bottom": "medium"
+                            },
+                            "image_setting": {
+                                "aspect_ratio": "two_to_one",
+                                "description_1_1": null,
+                                "description_2_1": null,
+                                "description_3_1": null,
+                                "description_4_1": null,
+                                "beschreibung_benutzerdefiniert": null,
+                                "width": 1,
+                                "height": 1,
+                                "use_color_overlay": false,
+                                "color": "#000000",
+                                "opacity": 30,
+                                "full_width": false
+                            },
+                            "space_top": "medium",
+                            "space_bottom": "medium",
+                            "type": "image",
+                            "enabled": true,
+                            "image": "test.jpg",
+                            "visibility": {
+                                "mobile": true,
+                                "tablet": true,
+                                "laptop": true,
+                                "desktop": true
+                            }
+                        }
+                    ],
+                    "type": "column",
+                    "enabled": true
+                },
+                {
+                    "id": "m7exwgax",
+                    "column_size": "1\/2",
+                    "sub_content_builder": [
+                        {
+                            "id": "m7exwwjq",
+                            "title": "Ein Style wie in den 50's",
+                            "subtitle": "F\u00fcr Desing Freaks",
+                            "title_positioning": "center",
+                            "show_in_bold": false,
+                            "space_top": "medium",
+                            "space_bottom": "medium",
+                            "type": "title_subtitle",
+                            "enabled": true,
+                            "visibility": {
+                                "mobile": true,
+                                "tablet": true,
+                                "laptop": true,
+                                "desktop": true
+                            }
+                        },
+                        {
+                            "id": "m7exxbcn",
+                            "wysiwyg": "<p>Sanft geschwungenen Formen und klaren Linien wie in den 50s Jahren. In der Retrolook Verpackung steckt ein echtes Barista-Tool. Gradgenaue Themperaturvorwahl, einstellbare elektronische Pre-Infusion, Shot-Clock, Portionierelektronik f\u00fcr zwei Mengen, ein Profi-Siebtr\u00e4ger und die von aussen zug\u00e4ngliche Br\u00fchdruckregulierung bieten alles, was zur optimalen Extraktion hochwertiger Espressi ben\u00f6tigt wird<strong><br><br><\/strong>Ein &quot;Muss&quot; f\u00fcr alle, die den Style und die Formen des letzten Jahrhunderts lieben.<\/p>",
+                            "space_top": "medium",
+                            "space_bottom": "medium",
+                            "type": "wysiwyg",
+                            "enabled": true,
+                            "visibility": {
+                                "mobile": true,
+                                "tablet": true,
+                                "laptop": true,
+                                "desktop": true
+                            }
+                        },
+                        {
+                            "id": "m7kbexc8",
+                            "positioning": "right",
+                            "links": [
+                                {
+                                    "id": "m7kbf41j",
+                                    "link_text": "Retro erkunden",
+                                    "direction": "left",
+                                    "variant": "secondary",
+                                    "target_blank": true,
+                                    "icon": "shopping-cart",
+                                    "icon_position": "left",
+                                    "space_top": "medium",
+                                    "space_bottom": "medium",
+                                    "type": "link",
+                                    "enabled": true,
+                                    "link": "https:\/\/shop.kafi.ch\/de\/categories?q=retro",
+                                    "visibility": {
+                                        "mobile": true,
+                                        "tablet": true,
+                                        "laptop": true,
+                                        "desktop": true
+                                    }
+                                }
+                            ],
+                            "type": "buttons",
+                            "enabled": true
+                        }
+                    ],
+                    "type": "column",
+                    "enabled": true
+                }
+            ],
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m3ohd9zb",
+            "columns": [
+                {
+                    "id": "m3ogsxsj",
+                    "column_size": "1\/2",
+                    "sub_content_builder": [
+                        {
+                            "id": "m3oguhqv",
+                            "title": "Schnell und unkompliziert",
+                            "subtitle": "Wenn's brennt",
+                            "title_positioning": "center",
+                            "show_in_bold": false,
+                            "space_top": "medium",
+                            "space_bottom": "medium",
+                            "type": "title_subtitle",
+                            "enabled": true,
+                            "visibility": {
+                                "mobile": true,
+                                "tablet": true,
+                                "laptop": true,
+                                "desktop": true
+                            }
+                        },
+                        {
+                            "id": "m3oh1eq4",
+                            "wysiwyg": "<p>Bei uns z\u00e4hen Serviceleistungen und Reparaturen genauso zu guten Ton wie die Beratung. Deshalb betreiben wir eine eigenen Werkstatt mit Profis und erstklassigen Komponenten f\u00fcr eine schnelle und ger\u00e4tespezifische Reparatur.<\/p><p>Kurz gesagt: Bei uns erhalten Sie nicht nur hochwertige Kaffeemaschinen, sondern auch einen umfassenden Service und qualitative Reparaturen.<\/p>",
+                            "space_top": "medium",
+                            "space_bottom": "medium",
+                            "type": "wysiwyg",
+                            "enabled": true,
+                            "visibility": {
+                                "mobile": true,
+                                "tablet": true,
+                                "laptop": true,
+                                "desktop": true
+                            }
+                        },
+                        {
+                            "id": "m7kbhd50",
+                            "positioning": "center",
+                            "links": [
+                                {
+                                    "id": "m7kbhf3b",
+                                    "link": "tel:071 2448030",
+                                    "link_text": "Der direkte Draht in die Werkstatt",
+                                    "direction": "left",
+                                    "variant": "primary",
+                                    "target_blank": false,
+                                    "icon": "phone",
+                                    "icon_position": "left",
+                                    "space_top": "medium",
+                                    "space_bottom": "medium",
+                                    "type": "link",
+                                    "enabled": true,
+                                    "visibility": {
+                                        "mobile": true,
+                                        "tablet": true,
+                                        "laptop": true,
+                                        "desktop": true
+                                    }
+                                }
+                            ],
+                            "type": "buttons",
+                            "enabled": true
+                        }
+                    ],
+                    "type": "column",
+                    "enabled": true
+                },
+                {
+                    "id": "m3ogxmgr",
+                    "column_size": "1\/2",
+                    "sub_content_builder": [
+                        {
+                            "id": "m7vn0zdj",
+                            "video_setting": "video_local",
+                            "video_local": "werkstatt_service.mp4",
+                            "space_top": "medium",
+                            "space_bottom": "medium",
+                            "type": "video",
+                            "enabled": true,
+                            "visibility": {
+                                "mobile": true,
+                                "tablet": true,
+                                "laptop": true,
+                                "desktop": true
+                            }
+                        }
+                    ],
+                    "type": "column",
+                    "enabled": true
+                }
+            ],
+            "type": "columns",
+            "enabled": true,
+            "space_top": "medium",
+            "space_bottom": "medium",
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m7eyudjp",
+            "variation": "solid",
+            "thickness": "1px",
+            "space_top": "medium",
+            "space_bottom": "medium",
+            "type": "divider",
+            "enabled": true,
+            "width": "medium",
+            "with_logo": true,
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m7kgq1ls",
+            "video_setting": "video_local",
+            "space_top": "medium",
+            "space_bottom": "medium",
+            "type": "video",
+            "enabled": true,
+            "video_local": "kaffee-morger-zubereitung.mp4",
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m3e9bqgb",
+            "title": "Kaffeewelt",
+            "subtitle": "Br\u00fchen & Geniessen",
+            "title_positioning": "center",
+            "show_in_bold": false,
+            "type": "title_subtitle",
+            "enabled": true,
+            "space_top": "medium",
+            "space_bottom": "medium",
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m3e91yo7",
+            "columns": 5,
+            "image_setting": {
+                "aspect_ratio": "one_to_one",
+                "description_1_1": null,
+                "description_2_1": null,
+                "description_3_1": null,
+                "description_4_1": null,
+                "description_custom": null,
+                "width": null,
+                "height": null
+            },
+            "images": [
+                {
+                    "id": "m3e92e1f",
+                    "image": "test.jpg",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": null,
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": null,
+                        "text_alignment": "left",
+                        "variant": "simple"
+                    },
+                    "link_setting": {
+                        "linking_link": "https:\/\/shop.kafi.ch\/de\/categories",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m3e96i42",
+                    "image": "test.jpg",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": null,
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": null,
+                        "text_alignment": "left",
+                        "variant": "simple"
+                    },
+                    "link_setting": {
+                        "linking_link": "https:\/\/shop.kafi.ch\/de\/categories",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m3e92hqq",
+                    "image": "test.jpg",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": null,
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": null,
+                        "text_alignment": "left",
+                        "variant": "simple"
+                    },
+                    "link_setting": {
+                        "linking_link": "https:\/\/shop.kafi.ch\/de\/categories",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m3e95vqr",
+                    "image": "test.jpg",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": null,
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": null,
+                        "text_alignment": "left",
+                        "variant": "simple"
+                    },
+                    "link_setting": {
+                        "linking_link": "https:\/\/shop.kafi.ch\/de\/categories",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m3e9358r",
+                    "image": "test.jpg",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": null,
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": null,
+                        "text_alignment": "left",
+                        "variant": "simple"
+                    },
+                    "link_setting": {
+                        "linking_link": "https:\/\/shop.kafi.ch\/de\/categories",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m3e93g2d",
+                    "image": "test.jpg",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": null,
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": null,
+                        "text_alignment": "left",
+                        "variant": "simple"
+                    },
+                    "link_setting": {
+                        "linking_link": "https:\/\/shop.kafi.ch\/de\/categories",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m3e944ag",
+                    "image": "test.jpg",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": null,
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": null,
+                        "text_alignment": "left",
+                        "variant": "simple"
+                    },
+                    "link_setting": {
+                        "linking_link": "https:\/\/shop.kafi.ch\/de\/categories",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m3e95ksp",
+                    "image": "test.jpg",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": null,
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": null,
+                        "text_alignment": "left",
+                        "variant": "simple"
+                    },
+                    "link_setting": {
+                        "linking_link": "https:\/\/shop.kafi.ch\/de\/categories",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m3e95s08",
+                    "image": "test.jpg",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": null,
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": null,
+                        "text_alignment": "left",
+                        "variant": "simple"
+                    },
+                    "link_setting": {
+                        "linking_link": "https:\/\/shop.kafi.ch\/de\/categories",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                },
+                {
+                    "id": "m3e96nvw",
+                    "image": "test.jpg",
+                    "settings": "link",
+                    "title_setting": {
+                        "title": null,
+                        "subtitle": null,
+                        "text_fuer_backend_feld": null,
+                        "text_position": null,
+                        "text_alignment": "left",
+                        "variant": "simple"
+                    },
+                    "link_setting": {
+                        "linking_link": "https:\/\/shop.kafi.ch\/de\/categories",
+                        "linking_link_text": null,
+                        "linking_title": null,
+                        "linking_direction": "left",
+                        "linking_variant": "primary",
+                        "linking_target_blank": false,
+                        "linking_spacer_feld": null,
+                        "linking_icon": null,
+                        "linking_icon_position": "left",
+                        "linking_show_advanced_settings": null,
+                        "linking_visibility": {
+                            "mobile": true,
+                            "tablet": true,
+                            "laptop": true,
+                            "desktop": true
+                        },
+                        "linking_space_top": "medium",
+                        "linking_space_bottom": "medium"
+                    },
+                    "image_setting": {
+                        "aspect_ratio": "sixteen_to_nine",
+                        "description_1_1": null,
+                        "description_2_1": null,
+                        "description_3_1": null,
+                        "description_4_1": null,
+                        "beschreibung_benutzerdefiniert": null,
+                        "width": 1,
+                        "height": 1,
+                        "use_color_overlay": false,
+                        "color": "#000000",
+                        "opacity": 30,
+                        "full_width": false
+                    },
+                    "type": "image",
+                    "enabled": true,
+                    "space_top": "medium",
+                    "space_bottom": "medium",
+                    "visibility": {
+                        "mobile": true,
+                        "tablet": true,
+                        "laptop": true,
+                        "desktop": true
+                    }
+                }
+            ],
+            "type": "image_grid",
+            "enabled": true,
+            "space_top": "medium",
+            "space_bottom": "medium",
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        },
+        {
+            "id": "m3pz4gb8",
+            "space_top": "medium",
+            "space_bottom": "medium",
+            "type": "instagram_feed",
+            "enabled": true,
+            "visibility": {
+                "mobile": true,
+                "tablet": true,
+                "laptop": true,
+                "desktop": true
+            }
+        }
+    ],
+    "show_space_bordering": false,
+    "popup": true,
+    "popup_title": "Neuheit",
+    "popup_wysiwyg": [
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "left"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "bold"
+                        }
+                    ],
+                    "text": "Die neue J10 Piano Black (SA) "
+                },
+                {
+                    "type": "hardBreak"
+                },
+                {
+                    "type": "text",
+                    "text": "Die K\u00f6nigin der Vollautomaten jetzt bei uns im Shop. "
+                }
+            ]
+        }
+    ],
+    "popup_button": {
+        "link": "https:\/\/beta.kafi.ch\/jura\/haushalt\/j10-piano-black-sa-40",
+        "link_text": "Offerte einholen",
+        "title": null,
+        "direction": "left",
+        "variant": "primary",
+        "target_blank": false,
+        "spacer_feld": null,
+        "icon": "shopping-cart",
+        "icon_position": "left",
+        "show_advanced_settings": null,
+        "visibility": {
+            "mobile": true,
+            "tablet": true,
+            "laptop": true,
+            "desktop": true
+        },
+        "space_top": "medium",
+        "space_bottom": "medium"
+    },
+    "exclude_from_search": false,
+    "popup_image": null
+}

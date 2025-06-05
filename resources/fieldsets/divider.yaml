@@ -1,0 +1,73 @@
+title: Trennlinie
+fields:
+  -
+    handle: variation
+    field:
+      options:
+        -
+          key: solid
+          value: Durchzogen
+        -
+          key: dashed
+          value: Gestrichelt
+        -
+          key: dotted
+          value: Gepunktet
+      default: solid
+      type: button_group
+      display: Variation
+      width: 50
+      replicator_preview: false
+  -
+    handle: thickness
+    field:
+      options:
+        -
+          key: 1px
+          value: '1 Pixel'
+        -
+          key: 2px
+          value: '2 Pixel'
+        -
+          key: 4px
+          value: '4 Pixel'
+        -
+          key: 8px
+          value: '8 Pixel'
+      default: 1px
+      type: button_group
+      display: Dicke
+      width: 50
+      if:
+        variation: 'not icon'
+      replicator_preview: false
+  -
+    handle: width
+    field:
+      options:
+        -
+          key: small
+          value: Kurz
+        -
+          key: medium
+          value: Mittel
+        -
+          key: large
+          value: Lang
+        -
+          key: full
+          value: Vollbreite
+      type: select
+      display: Länge
+      width: 33
+      default: medium
+      replicator_preview: false
+  -
+    handle: with_logo
+    field:
+      type: toggle
+      display: 'Mit Logo'
+      width: 33
+      replicator_preview: false
+  -
+    import: section_options

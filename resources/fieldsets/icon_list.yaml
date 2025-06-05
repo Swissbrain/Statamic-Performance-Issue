@@ -1,0 +1,28 @@
+title: Icons
+fields:
+  -
+    handle: icon_list
+    field:
+      type: replicator
+      display: 'Icon Liste'
+      sets:
+        new_set_group:
+          display: '-'
+          sets:
+            icons:
+              display: Icons
+              fields:
+                -
+                  handle: icon
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: images
+                    type: assets
+                    display: Icon
+                    replicator_preview: false
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Titel

@@ -1,0 +1,105 @@
+title: Seitenverhältnis
+fields:
+  -
+    handle: aspect_ratio
+    field:
+      options:
+        -
+          key: one_to_one
+          value: '1:1'
+        -
+          key: two_to_one
+          value: '2:1'
+        -
+          key: three_to_one
+          value: '3:1'
+        -
+          key: four_to_one
+          value: '4:1'
+        -
+          key: custom
+          value: Benutzerdefiniert
+      type: button_group
+      default: two_to_one
+      display: Seitenverhältnis
+      always_save: true
+      replicator_preview: false
+  -
+    handle: description_1_1
+    field:
+      description: 'Ideale Bildgrösse: 1200 x 1200 Pixel'
+      type: backend_text
+      display: 'Beschreibung 1:1'
+      hide_display: true
+      if:
+        aspect_ratio: 'equals one_to_one'
+      replicator_preview: false
+  -
+    handle: description_2_1
+    field:
+      description: 'Ideale Bildgrösse: 1200 x 600 Pixel'
+      type: backend_text
+      display: 'Beschreibung 2:1'
+      hide_display: true
+      replicator_preview: false
+      if:
+        aspect_ratio: 'equals two_to_one'
+  -
+    handle: description_3_1
+    field:
+      description: 'Ideale Bildgrösse: 1200 x 400 Pixel'
+      type: backend_text
+      display: 'Beschreibung 3:1'
+      hide_display: true
+      replicator_preview: false
+      if:
+        aspect_ratio: 'equals three_to_one'
+  -
+    handle: description_4_1
+    field:
+      description: 'Ideale Bildgrösse: 1200 x 300 Pixel'
+      type: backend_text
+      display: 'Beschreibung 4:1'
+      hide_display: true
+      replicator_preview: false
+      if:
+        aspect_ratio: 'equals four_to_one'
+  -
+    handle: beschreibung_benutzerdefiniert
+    field:
+      description: |-
+        Hier können Sie das Verhältnis selbst bestimmen. Ausgangslage ist die Breite von 1200 Pixel.
+        Höhe lässt sich wie folgt berechnen: Höhe / Breite * 1200. Beispiel ein Verhältnis 3:4 = 3/4*1200 = 900px.
+        Haben Sie bereits ein fixes Bild, so geben Sie die Höhe und Breite als Pixel in die Felder rein. z.B. Höhe = 1500, Breite = 750
+      type: backend_text
+      display: 'Beschreibung Benutzerdefiniert'
+      hide_display: true
+      replicator_preview: false
+      if:
+        aspect_ratio: 'equals custom'
+  -
+    handle: width
+    field:
+      default: '1'
+      type: float
+      display: Breite
+      width: 50
+      replicator_preview: false
+      validate:
+        - 'min:1'
+      if:
+        aspect_ratio: 'equals custom'
+      always_save: true
+  -
+    handle: height
+    field:
+      default: '1'
+      type: float
+      display: Höhe
+      width: 50
+      replicator_preview: false
+      validate:
+        - 'min:1'
+      if:
+        aspect_ratio: 'equals custom'
+      always_save: true

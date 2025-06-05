@@ -1,0 +1,37 @@
+title: 'Bild Farbfilterung'
+fields:
+  -
+    handle: use_color_overlay
+    field:
+      type: toggle
+      display: 'Farbfilterung anwenden'
+      replicator_preview: false
+  -
+    handle: color
+    field:
+      type: color
+      display: Farbe
+      instructions: 'Welche Farbe soll über das Bild gezogen werden?'
+      width: 33
+      always_save: true
+      if:
+        use_color_overlay: 'equals true'
+      swatches:
+        - '#21387C'
+        - '#FFCC1A'
+        - '#000000'
+        - '#ffffff'
+      default: '#000000'
+      replicator_preview: false
+  -
+    handle: opacity
+    field:
+      default: 30
+      type: range
+      display: Transparenz
+      instructions: 'Wie stark soll die Farbe über das Bild gezogen werden? 0 = Durchsichtig, 100 = Volle Farbe'
+      width: 66
+      always_save: true
+      if:
+        use_color_overlay: 'equals true'
+      replicator_preview: false

@@ -1,0 +1,33 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@tailwindcss/typography": "^0.5.12",
+        "autoprefixer": "^10.4.19",
+        "laravel-vite-plugin": "^1.0.2",
+        "postcss": "^8.4.38",
+        "tailwindcss": "^3.4.3",
+        "vite": "^5.2.8"
+    },
+    "dependencies": {
+        "@alpinejs/anchor": "^3.14.0",
+        "@alpinejs/collapse": "^3.14.0",
+        "@alpinejs/focus": "^3.14.0",
+        "@alpinejs/morph": "^3.14.0",
+        "@alpinejs/persist": "^3.14.0",
+        "@fancyapps/ui": "^5.0.36",
+        "@fontsource-variable/nunito": "^5.0.19",
+        "@fontsource-variable/readex-pro": "^5.0.13",
+        "@fontsource/amatic-sc": "^5.0.20",
+        "@vitejs/plugin-vue": "^5.1.4",
+        "fuse.js": "^7.0.0",
+        "laravel-precognition-alpine": "^0.5.5",
+        "sass": "^1.80.3",
+        "swiper": "^11.1.4",
+        "vue": "^3.5.12"
+    }
+}

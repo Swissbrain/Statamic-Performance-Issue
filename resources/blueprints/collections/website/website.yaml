@@ -1,0 +1,155 @@
+title: Webseite
+tabs:
+  main:
+    display: Content
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            import: content_builder
+  popup:
+    display: 'Popup Werbung'
+    sections:
+      -
+        display: 'Neuer Abschnitt'
+        fields:
+          -
+            handle: popup
+            field:
+              type: toggle
+              display: 'Popup einschalten'
+              replicator_preview: false
+          -
+            handle: popup_title
+            field:
+              type: text
+              display: Titel
+              replicator_preview: false
+              if:
+                popup: 'equals true'
+              always_save: true
+          -
+            handle: popup_wysiwyg
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Text
+              replicator_preview: false
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              if:
+                popup: 'equals true'
+              always_save: true
+          -
+            handle: popup_image
+            field:
+              max_files: 1
+              container: images
+              type: assets
+              display: Bild
+              instructions: 'Mind. 400 Pixel breit. Für ein Banner Style 400x200. Für mehr Bildfläche 400x400.'
+              replicator_preview: false
+              always_save: true
+              if:
+                popup: 'equals true'
+          -
+            handle: popup_button
+            field:
+              fullscreen: false
+              border: false
+              type: group
+              display: popup_button
+              hide_display: true
+              replicator_preview: false
+              always_save: true
+              if:
+                popup: 'equals true'
+              fields:
+                -
+                  import: link
+  seo:
+    display: SEO
+    sections:
+      -
+        display: Page
+        instructions: 'Page SEO Settings'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_basic'
+      -
+        display: Advanced
+        instructions: 'Advanced SEO Settings'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_advanced'
+      -
+        display: 'Open Graph'
+        instructions: 'Open Graph meta tags for social sharing.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_open_graph'
+      -
+        display: Sitemap
+        instructions: 'Sitemap Konfigurationen'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_sitemap'
+      -
+        display: 'JSON-ld Schema'
+        instructions: 'Eigene JSON-ld schema Objekt hinzufügen'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_jsonld'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - website
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: show_space_bordering
+            field:
+              type: toggle
+              display: 'Abstand Hilfslinie anzeigen'
+              replicator_preview: false
+          -
+            handle: exclude_from_search
+            field:
+              type: toggle
+              display: 'Von der Suche ausschliessen'
+              replicator_preview: false

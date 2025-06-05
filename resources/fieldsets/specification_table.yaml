@@ -1,0 +1,36 @@
+title: Spezifikationstabelle
+fields:
+  -
+    handle: spec_table_title
+    field:
+      type: text
+      display: Titel
+  -
+    handle: specifications
+    field:
+      type: replicator
+      display: Specifications
+      hide_display: true
+      replicator_preview: false
+      sets:
+        neue_setgruppe:
+          display: 'Neue Setgruppe'
+          sets:
+            specification:
+              display: Spezifikation
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Titel
+                    width: 50
+                -
+                  handle: value
+                  field:
+                    type: text
+                    display: Wert
+                    width: 50
+                    replicator_preview: false
+                    instructions: 'Der Wert "ja" und "nein" wird automatisch als Icon dargestellt.'
+                    instructions_position: below

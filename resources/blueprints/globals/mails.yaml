@@ -1,0 +1,23 @@
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        display: Mietanfrage
+        fields:
+          -
+            handle: mail_request_email_content
+            field:
+              buttons:
+                - h1
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+              allow_source: false
+              remove_empty_nodes: false
+              type: bard
+              display: 'Email Content'
+              instructions: 'Platzhalter: {vorname}, {nachname}, {morger}, {anfragedaten}'
+              replicator_preview: false

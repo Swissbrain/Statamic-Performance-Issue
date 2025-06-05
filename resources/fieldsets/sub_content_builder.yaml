@@ -1,0 +1,71 @@
+title: 'Sub Content Builder'
+fields:
+  -
+    handle: sub_content_builder
+    field:
+      collapse: true
+      type: replicator
+      display: 'Dynamische Inhaltselemente'
+      replicator_preview: false
+      hide_display: true
+      sets:
+        text_and_image:
+          display: 'Text, Bild & Video'
+          icon: text-formatting-wrap-image-left
+          sets:
+            title_subtitle:
+              display: 'Titel / Untertitel'
+              icon: text-formatting-ampersand
+              fields:
+                -
+                  import: title_subtitle
+            wysiwyg:
+              display: 'Text Editor'
+              icon: text-formatting-all-caps
+              fields:
+                -
+                  import: wysiwyg
+            image:
+              display: Image
+              icon: media-image-picture-orientation
+              fields:
+                -
+                  import: image
+            image_grid:
+              display: 'Bild Raster'
+              icon: dashboard-layout
+              fields:
+                -
+                  import: image_grid
+            image_slider:
+              display: 'Bild Slider'
+              icon: media-image-picture-gallery
+              fields:
+                -
+                  import: image_slider
+            video:
+              display: Video
+              icon: media-webcam-video
+              fields:
+                -
+                  import: video
+        design_elements:
+          display: 'Struktur Elemente'
+          icon: dashboard-layout-3
+          sets:
+            divider:
+              display: Trennlinie
+              icon: align-object-center
+              fields:
+                -
+                  import: divider
+        interaction:
+          display: Interaktion
+          icon: link
+          sets:
+            buttons:
+              display: Buttons
+              icon: link
+              fields:
+                -
+                  import: links

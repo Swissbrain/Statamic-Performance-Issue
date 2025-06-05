@@ -1,0 +1,41 @@
+title: 'Produkte Raster'
+fields:
+  -
+    handle: columns
+    field:
+      min: 2
+      max: 6
+      default: 4
+      type: range
+      display: Spalten
+      replicator_preview: false
+  -
+    handle: products
+    field:
+      type: replicator
+      display: Produkte
+      replicator_preview: false
+      listable: true
+      sets:
+        neue_setgruppe:
+          display: 'Neue Setgruppe'
+          sets:
+            product:
+              display: 'Makaris Produkt'
+              fields:
+                -
+                  handle: makaris_product_id
+                  field:
+                    type: makaris_product
+                    display: Produkte-Nr.
+                    validate:
+                      - 'new App\Rules\MakarisProductExistRule'
+                -
+                  handle: override_title
+                  field:
+                    type: text
+                    display: 'Titel übersteuern'
+                    instructions: 'Optional: Hier kann der Titel des Produkt übersteuert werden.'
+                    replicator_preview: false
+  -
+    import: section_options

@@ -1,0 +1,42 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: company_name
+            field:
+              type: text
+          -
+            handle: street
+            field:
+              type: text
+          -
+            handle: zip_code
+            field:
+              type: text
+              display: 'Zip Code'
+          -
+            handle: city
+            field:
+              type: text
+          -
+            handle: email
+            field:
+              type: text
+          -
+            handle: phone_number
+            field:
+              type: text
+          -
+            handle: shop_link
+            field:
+              type: text
+              display: 'Shop Link'
+          -
+            handle: map_link
+            field:
+              type: text
+              display: 'Google Map'
+              replicator_preview: false

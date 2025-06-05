@@ -1,0 +1,62 @@
+title: Formular
+fields:
+  -
+    handle: form_type
+    field:
+      options:
+        dynamic: Dynamisch
+        newsletter: Newsletter
+        file: File
+      default: dynamic
+      type: button_group
+      display: 'Formular Typ'
+      replicator_preview: false
+  -
+    handle: form
+    field:
+      max_items: 1
+      type: form
+      display: Formular
+      validate:
+        - sometimes
+        - required
+      if:
+        form_type: 'not newsletter'
+      replicator_preview: false
+  -
+    handle: file
+    field:
+      max_files: 1
+      min_files: 1
+      container: documents
+      type: assets
+      display: Datei
+      replicator_preview: false
+      if:
+        form_type: 'equals file'
+  -
+    handle: mail_content
+    field:
+      type: group
+      display: 'Mail Inhalt'
+      replicator_preview: false
+      if:
+        form_type: 'equals file'
+      fields:
+        -
+          handle: subject
+          field:
+            type: text
+            display: Betreff
+            replicator_preview: false
+        -
+          import: wysiwyg
+  -
+    handle: sucess_message
+    field:
+      default: 'Deine Nachricht wurde erfolgreich versendet'
+      type: textarea
+      display: 'Erfolgreich Verschickt'
+      instructions: 'Nachricht welche angezeigt wird wenn das Formular erfolgreich übermittelt wurde.'
+      instructions_position: below
+      replicator_preview: false

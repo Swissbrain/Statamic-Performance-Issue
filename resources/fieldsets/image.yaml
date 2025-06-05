@@ -1,0 +1,141 @@
+title: Bild
+fields:
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: images
+      type: assets
+      display: Bild
+      replicator_preview: false
+  -
+    handle: settings
+    field:
+      options:
+        -
+          key: image
+          value: Bild
+        -
+          key: title
+          value: Titel
+        -
+          key: link
+          value: Verlinkung
+      type: button_group
+      replicator_preview: false
+      display: Einstellungen
+      sortable: false
+      duplicate: false
+      default: image
+  -
+    handle: title_setting
+    field:
+      border: false
+      type: group
+      display: 'Titel Einstellungen'
+      sortable: false
+      hide_display: true
+      fullscreen: false
+      if:
+        settings: 'equals title'
+      always_save: true
+      replicator_preview: false
+      fields:
+        -
+          handle: title
+          field:
+            type: text
+            display: Titel
+        -
+          handle: subtitle
+          field:
+            type: text
+            display: Untertitel
+            replicator_preview: false
+        -
+          handle: text_fuer_backend_feld
+          field:
+            description: 'Untertitel wird nicht dargestellt, wenn Darstellungsvariant "Linie unten & oben" ausgewählt ist.'
+            type: backend_text
+            display: 'Hinweis Linie Variant'
+            if:
+              variant: 'equals lines'
+            hide_display: true
+        -
+          handle: text_position
+          field:
+            type: grid_alignment
+            display: Positionierung
+            width: 33
+        -
+          handle: text_alignment
+          field:
+            options:
+              -
+                key: left
+                value: Links
+              -
+                key: center
+                value: Zentriert
+              -
+                key: right
+                value: Rechts
+            default: left
+            type: button_group
+            display: Textausrichtung
+            width: 33
+        -
+          handle: variant
+          field:
+            options:
+              -
+                key: simple
+                value: Einfach
+              -
+                key: lines
+                value: 'Linie oben & unten'
+            default: simple
+            type: select
+            display: Darstellungsvariant
+            replicator_preview: false
+            width: 33
+  -
+    handle: link_setting
+    field:
+      type: group
+      display: 'Link Einstellungen'
+      hide_display: true
+      fullscreen: false
+      border: false
+      replicator_preview: false
+      always_save: true
+      if:
+        settings: 'equals link'
+      fields:
+        -
+          import: link
+          prefix: linking_
+  -
+    handle: image_setting
+    field:
+      border: false
+      type: group
+      display: 'Bild Einstellungen'
+      hide_display: true
+      always_save: true
+      if:
+        settings: 'equals image'
+      replicator_preview: false
+      fields:
+        -
+          import: aspect_ratio
+        -
+          import: image_color_filter
+        -
+          handle: full_width
+          field:
+            type: toggle
+            display: 'Volle Breite'
+            replicator_preview: false
+  -
+    import: section_options

@@ -1,0 +1,18 @@
+<x-call-to-action
+    :aspectRatio="(string) $image_setting->value()->aspect_ratio->value()"
+    :aspectRatioWidth="$image_setting->value()->width"
+    :aspectRatioHeight="$image_setting->value()->height"
+    :size="$size->value()"
+    :imageSrc="$image->value()?->path()"
+    :text-position="$title_setting->value()->text_position"
+    :text-alignment="(string) $title_setting->value()->text_alignment"
+    :title="$title_setting->value()->title"
+    :subtitle="$title_setting->value()->subtitle"
+    :href="$link_setting->value()->linking_link->url()"
+    :isTargetBlank="(bool) $link_setting->value()->linking_target_blank"
+    :buttonVariation="(string) $link_setting->value()->linking_variant"
+    :buttonTitle="(string) $link_setting->value()->linking_title"
+    :buttonLabel="(string) $link_setting->value()->linking_link_text"
+    :overlay-color="$image_setting->value()->use_color_overlay ? $image_setting->value()->color : null"
+    :overlay-opacity="$image_setting->value()->use_color_overlay ? $image_setting->value()->opacity : null"
+/>

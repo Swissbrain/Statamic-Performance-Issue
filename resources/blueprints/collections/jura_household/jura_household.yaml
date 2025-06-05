@@ -1,0 +1,499 @@
+title: 'Jura - Haushalte'
+tabs:
+  main:
+    display: Grundinformationen
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: 'Name der Jura Maschine'
+          -
+            handle: makaris_product_number
+            field:
+              type: makaris_product
+              display: Produkte-Nr.
+              disableEditing: true
+              disable_editing: true
+              always_save: true
+              instructions: 'Liste entspricht dem Vertriebskanal B2B'
+              distribution_channel: B2B
+              validate:
+                - required
+                - 'new App\Rules\MakarisProductExistRule(''B2B'')'
+              if: 'custom isCreating'
+          -
+            handle: description
+            field:
+              fullscreen: false
+              border: false
+              type: group
+              display: Beschreibung
+              hide_display: true
+              replicator_preview: false
+              always_save: true
+              if: 'custom isEditing'
+              fields:
+                -
+                  import: wysiwyg
+          -
+            handle: product_line
+            field:
+              max_items: 1
+              mode: select
+              collections:
+                - jura_product_lines
+              type: entries
+              display: Linie
+              width: 33
+              replicator_preview: false
+              always_save: true
+              validate:
+                - null
+              if: 'custom isEditing'
+          -
+            handle: energy_usage
+            field:
+              options:
+                -
+                  key: A
+                  value: null
+                -
+                  key: B
+                  value: null
+                -
+                  key: C
+                  value: null
+                -
+                  key: D
+                  value: null
+                -
+                  key: E
+                  value: null
+                -
+                  key: F
+                  value: null
+                -
+                  key: G
+                  value: null
+              clearable: true
+              searchable: false
+              type: select
+              display: Energieverbrauch
+              width: 33
+              replicator_preview: false
+              if: 'custom isEditing'
+          -
+            handle: warranty_duration
+            field:
+              default: '36'
+              append: Monate
+              type: integer
+              display: 'Garantie Dauer'
+              width: 33
+              replicator_preview: false
+              if: 'custom isEditing'
+  images:
+    display: Bilder
+    sections:
+      -
+        fields:
+          -
+            handle: override_images
+            field:
+              type: toggle
+              display: 'Bilder übersteuern'
+              replicator_preview: false
+              if:
+                custom: 'custom isEditing'
+          -
+            handle: images
+            field:
+              mode: grid
+              container: images
+              type: assets
+              display: Bilder
+              instructions: 'Das erste Bild wird als Hauptbild verwendet. Bildgrösse: mind. 600 x 600 Pixel'
+              replicator_preview: false
+              validate:
+                - sometimes
+                - required
+              if:
+                custom: 'custom isEditing'
+                override_images: 'equals true'
+          -
+            handle: makaris_product_image_preview
+            field:
+              distribution_channel: B2B
+              disable_editing: makaris_product_number
+              type: makaris_product_image_preview
+              display: 'Makaris Produkt Bilder'
+              product_number_fieldtype: makaris_product_number
+              replicator_preview: false
+              if:
+                custom: 'custom isEditing'
+                override_images: 'equals false'
+  videos:
+    display: Videos
+    sections:
+      -
+        fields:
+          -
+            handle: videos
+            field:
+              container: movies
+              type: assets
+              display: Videos
+  documents_attachments:
+    display: 'Dokumente & Anhänge'
+    sections:
+      -
+        fields:
+          -
+            handle: documents
+            field:
+              container: documents
+              type: assets
+              display: Dokumente
+              replicator_preview: false
+              if: 'custom isEditing'
+  technical_data:
+    display: 'Technische Daten'
+    sections:
+      -
+        fields:
+          -
+            handle: specifications
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              remove_empty_nodes: false
+              type: bard
+              display: Spezifikationen
+              replicator_preview: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        display: Einstellungen
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: exclude_from_search
+            field:
+              type: toggle
+              display: 'Von der Suche ausschliessen'
+              replicator_preview: false
+      -
+        display: 'Makaris Produkt'
+        fields:
+          -
+            handle: product_info
+            field:
+              type: makaris_product_info
+              display: Produkt
+              hide_display: true
+              product_number_fieldtype: makaris_product_number
+              section_type: B2B
+              if: 'custom isEditing'
+              distribution_channel: B2B
+  linked_products:
+    display: 'Verlinkte Produkte'
+    sections:
+      -
+        display: Zubehör
+        fields:
+          -
+            handle: accessoires
+            field:
+              type: replicator
+              display: Zubehör
+              hide_display: true
+              replicator_preview: false
+              fullscreen: false
+              sets:
+                neue_setgruppe:
+                  display: 'Neue Setgruppe'
+                  sets:
+                    accesoires:
+                      display: Zubehör
+                      fields:
+                        -
+                          handle: makaris_product_number
+                          field:
+                            type: makaris_product
+                            display: Produkte-Nr.
+                            replicator_preview: false
+      -
+        display: Pflegeprodukte
+        fields:
+          -
+            handle: care_product
+            field:
+              type: replicator
+              display: Pflegeprodukt
+              replicator_preview: false
+              hide_display: true
+              fullscreen: false
+              sets:
+                neue_setgruppe:
+                  display: 'Neue Setgruppe'
+                  sets:
+                    care_products:
+                      display: Pflegeprodukte
+                      fields:
+                        -
+                          handle: makaris_product_number
+                          field:
+                            type: makaris_product
+                            display: Produkte-Nr.
+                            replicator_preview: false
+  quote:
+    display: Offerte
+    sections:
+      -
+        display: Katalog
+        fields:
+          -
+            handle: catalogue
+            field:
+              type: replicator
+              display: Katalog
+              replicator_preview: false
+              hide_display: true
+              collapse: true
+              sets:
+                neue_setgruppe:
+                  display: 'Neue Setgruppe'
+                  sets:
+                    product:
+                      display: Produkt
+                      icon: money-cashier-price-tag
+                      fields:
+                        -
+                          handle: product
+                          field:
+                            distribution_channel: B2B
+                            type: makaris_product
+                            display: Produkt
+                        -
+                          handle: override_title
+                          field:
+                            type: toggle
+                            display: 'Titel übersteuern'
+                            width: 25
+                            replicator_preview: false
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Titel
+                            width: 75
+                            validate:
+                              - sometimes
+                              - required
+                            if:
+                              override_title: 'equals true'
+                        -
+                          handle: description
+                          field:
+                            type: textarea
+                            display: Kurzbeschreibung
+                            replicator_preview: false
+                        -
+                          handle: amount
+                          field:
+                            default: '1'
+                            type: integer
+                            display: Menge
+                            width: 50
+                            validate:
+                              - 'min:1'
+                        -
+                          handle: is_free
+                          field:
+                            type: toggle
+                            display: 'Produkt ist Gratis'
+                            width: 50
+                            replicator_preview: false
+                        -
+                          handle: is_required
+                          field:
+                            type: toggle
+                            display: Pflichtig
+                            instructions: 'Dieses Produkt wird immer automatisch in den Warenkorb der Offerte hinzugefügt und kann nicht entfernt werden'
+                            replicator_preview: false
+                            width: 50
+                        -
+                          handle: automatic_adding
+                          field:
+                            type: toggle
+                            display: 'Automatisch hinzufügen'
+                            replicator_preview: false
+                            unless:
+                              is_required: 'equals true'
+                            width: 50
+                    activity:
+                      display: Tätigkeit
+                      icon: favorite-star
+                      fields:
+                        -
+                          handle: activity
+                          field:
+                            type: makaris_activity
+                            display: Tätigkeit
+                        -
+                          handle: override_title
+                          field:
+                            type: toggle
+                            display: 'Titel übersteuern'
+                            width: 25
+                            replicator_preview: false
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Titel
+                            width: 75
+                            validate:
+                              - sometimes
+                              - required
+                            if:
+                              override_title: 'equals true'
+                        -
+                          handle: description
+                          field:
+                            type: textarea
+                            display: Kurzbeschreibung
+                            replicator_preview: false
+                        -
+                          handle: amount
+                          field:
+                            default: '1'
+                            type: integer
+                            display: Menge
+                            validate:
+                              - 'min:1'
+                            width: 50
+                            visibility: read_only
+                        -
+                          handle: is_free
+                          field:
+                            type: toggle
+                            display: 'Tätigkeit ist Gratis'
+                            width: 50
+                            replicator_preview: false
+                        -
+                          handle: is_required
+                          field:
+                            type: toggle
+                            display: Pflichtig
+                            instructions: 'Diese Tätigkeit wird immer automatisch in den Warenkorb der Offerte hinzugefügt und kann nicht entfernt werden'
+                            width: 50
+                            replicator_preview: false
+                            visibility: hidden
+                            default: true
+                        -
+                          handle: automatic_adding
+                          field:
+                            type: toggle
+                            display: 'Automatisch hinzufügen'
+                            replicator_preview: false
+                            unless:
+                              is_required: 'equals true'
+                            width: 50
+                            visibility: hidden
+                    expense_type:
+                      display: Aufwand
+                      icon: money-cash-bill
+                      fields:
+                        -
+                          handle: expense_type
+                          field:
+                            type: makaris_expense_type
+                            display: Aufwand
+                        -
+                          handle: override_title
+                          field:
+                            type: toggle
+                            display: 'Titel übersteuern'
+                            width: 25
+                            replicator_preview: false
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Titel
+                            width: 75
+                            validate:
+                              - sometimes
+                              - required
+                            if:
+                              override_title: 'equals true'
+                        -
+                          handle: description
+                          field:
+                            type: textarea
+                            display: Kurzbeschreibung
+                            replicator_preview: false
+                        -
+                          handle: amount
+                          field:
+                            default: '1'
+                            type: integer
+                            display: Menge
+                            validate:
+                              - 'min:1'
+                            width: 50
+                            visibility: read_only
+                        -
+                          handle: is_free
+                          field:
+                            type: toggle
+                            display: 'Aufwand ist Gratis'
+                            width: 50
+                            replicator_preview: false
+                        -
+                          handle: is_required
+                          field:
+                            type: toggle
+                            display: Pflichtig
+                            instructions: 'Dieser Aufwand wird immer automatisch in den Warenkorb der Offerte hinzugefügt und kann nicht entfernt werden'
+                            width: 50
+                            replicator_preview: false
+                            visibility: hidden
+                            default: true
+                        -
+                          handle: automatic_adding
+                          field:
+                            type: toggle
+                            display: 'Automatisch hinzufügen'
+                            width: 50
+                            replicator_preview: false
+                            unless:
+                              is_required: 'equals true'
+                            visibility: hidden

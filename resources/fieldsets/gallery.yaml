@@ -1,0 +1,19 @@
+title: Gallerie
+fields:
+  -
+    handle: columns
+    field:
+      min: 2
+      max: 5
+      type: range
+      display: Spalten
+      default: 4
+      replicator_preview: false
+  -
+    handle: images
+    field:
+      min_files: 1
+      container: images
+      type: assets
+      display: Bilder
+      replicator_preview: false

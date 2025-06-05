@@ -1,0 +1,32 @@
+title: Hero
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Titel
+  -
+    handle: subtitle
+    field:
+      type: text
+      display: Untertitel
+      replicator_preview: false
+  -
+    handle: bg_decoration
+    field:
+      max_files: 1
+      min_files: 1
+      container: images
+      type: assets
+      display: 'Hintergrund Dekoration'
+      replicator_preview: false
+  -
+    handle: background_images
+    field:
+      min_files: 1
+      container: images
+      type: assets
+      display: Hintergrundbilder
+      replicator_preview: false
+  -
+    import: links

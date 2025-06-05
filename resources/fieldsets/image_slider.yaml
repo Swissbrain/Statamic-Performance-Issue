@@ -1,0 +1,217 @@
+title: 'Bild Slider'
+fields:
+  -
+    handle: animate_images
+    field:
+      type: toggle
+      display: 'Bilder animieren'
+      width: 25
+      replicator_preview: false
+  -
+    handle: show_pagination
+    field:
+      type: toggle
+      display: 'Paginierung anzeigen'
+      width: 25
+      replicator_preview: false
+  -
+    handle: show_navigation
+    field:
+      type: toggle
+      display: 'Navigation anzeigen'
+      width: 25
+      replicator_preview: false
+  -
+    handle: center_slider
+    field:
+      type: toggle
+      display: 'Slider mit Content zentrieren'
+      width: 25
+      instructions_position: below
+      replicator_preview: false
+  -
+    import: aspect_ratio
+  -
+    handle: entry_type
+    field:
+      options:
+        -
+          key: only_images
+          value: 'Nur Bilder'
+        -
+          key: image_with_link
+          value: 'Bild mit Text und Link'
+      default: only_images
+      type: button_group
+      display: 'Art der Einträge'
+      replicator_preview: false
+  -
+    handle: slides
+    field:
+      type: replicator
+      display: Bilder
+      replicator_preview: false
+      always_save: true
+      if:
+        entry_type: 'equals image_with_link'
+      sets:
+        neue_setgruppe:
+          display: 'Neue Setgruppe'
+          sets:
+            entry:
+              display: Bild
+              fields:
+                -
+                  handle: setting_buttons
+                  field:
+                    options:
+                      -
+                        key: image
+                        value: Bild
+                      -
+                        key: title
+                        value: Titel
+                      -
+                        key: link
+                        value: Button
+                    default: image
+                    type: button_group
+                    display: Einstellungen
+                    always_save: false
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: images
+                    show_set_alt: false
+                    type: assets
+                    display: Bild
+                    always_save: true
+                    replicator_preview: false
+                    if:
+                      setting_buttons: 'equals image'
+                -
+                  handle: image_color_overlay
+                  field:
+                    border: false
+                    type: group
+                    display: 'Bild Farbfilter'
+                    hide_display: true
+                    replicator_preview: false
+                    always_save: true
+                    if:
+                      setting_buttons: 'equals image'
+                    fields:
+                      -
+                        import: image_color_filter
+                -
+                  handle: entry_title
+                  field:
+                    type: textarea
+                    display: Titel
+                    always_save: true
+                    if:
+                      setting_buttons: 'equals title'
+                -
+                  handle: entry_subtitle
+                  field:
+                    type: textarea
+                    display: Subtitel
+                    replicator_preview: false
+                    always_save: true
+                    if:
+                      setting_buttons: 'equals title'
+                -
+                  handle: text_position
+                  field:
+                    type: grid_alignment
+                    display: Positionierung
+                    replicator_preview: false
+                    always_save: true
+                    if:
+                      setting_buttons: 'equals title'
+                    width: 33
+                -
+                  handle: text_alignment
+                  field:
+                    options:
+                      -
+                        key: left
+                        value: Links
+                      -
+                        key: center
+                        value: Zentriert
+                      -
+                        key: right
+                        value: Rechts
+                    default: left
+                    type: button_group
+                    display: Textausrichtung
+                    width: 33
+                    always_save: true
+                    if:
+                      setting_buttons: 'equals title'
+                    replicator_preview: false
+                -
+                  handle: font_color
+                  field:
+                    swatches:
+                      - '#21387c'
+                      - '#FFCC1A'
+                      - '#000000'
+                      - '#ffffff'
+                    default: '#21387c'
+                    type: color
+                    display: Schriftfarbe
+                    replicator_preview: false
+                    always_save: true
+                    width: 33
+                    if:
+                      setting_buttons: 'equals title'
+                -
+                  handle: linking
+                  field:
+                    border: false
+                    type: group
+                    display: Verlinkung
+                    always_save: true
+                    hide_display: true
+                    if:
+                      setting_buttons: 'equals link'
+                    replicator_preview: false
+                    fields:
+                      -
+                        import: link
+                -
+                  handle: button_alignment
+                  field:
+                    options:
+                      -
+                        key: left
+                        value: Links
+                      -
+                        key: center
+                        value: Zentriert
+                      -
+                        key: right
+                        value: Rechts
+                    type: button_group
+                    display: 'Button Ausrichtung'
+                    always_save: true
+                    if:
+                      setting_buttons: 'equals link'
+                    width: 33
+                    replicator_preview: false
+  -
+    handle: images
+    field:
+      container: images
+      show_set_alt: false
+      type: assets
+      display: Bilder
+      replicator_preview: false
+      always_save: true
+      if:
+        entry_type: 'equals only_images'
+  -
+    import: section_options

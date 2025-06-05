@@ -1,0 +1,49 @@
+/* This is all you. */
+
+.grid-alignment {
+    display: inline-grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    button {
+        width: 50px;
+        height: 50px;
+    }
+    button:nth-child(1) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    button:nth-child(2) {
+        border-radius: 0;
+    }
+    button:nth-child(3) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    button:nth-child(4) {
+        border-radius: 0;
+    }
+    button:nth-child(5) {
+        border-radius: 0;
+    }
+    button:nth-child(6) {
+        border-radius: 0;
+    }
+
+
+    button:nth-child(7) {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    button:nth-child(8) {
+        border-radius: 0;
+    }
+    button:nth-child(9) {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}

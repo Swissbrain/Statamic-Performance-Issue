@@ -1,0 +1,39 @@
+title: FAQ
+fields:
+  -
+    handle: width
+    field:
+      options:
+        -
+          key: full
+          value: Voll
+        -
+          key: contained
+          value: Begrenzt
+      default: full
+      type: button_group
+      display: Breite
+      replicator_preview: false
+  -
+    import: sub_content_builder
+  -
+    handle: elements
+    field:
+      type: replicator
+      display: Elemente
+      replicator_preview: false
+      collapse: true
+      sets:
+        neue_set-gruppe:
+          display: '-'
+          sets:
+            element:
+              display: Element
+              fields:
+                -
+                  handle: element_title
+                  field:
+                    type: text
+                    display: 'Element Titel'
+                -
+                  import: sub_content_builder

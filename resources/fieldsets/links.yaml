@@ -1,0 +1,34 @@
+title: Links
+fields:
+  -
+    handle: positioning
+    field:
+      options:
+        -
+          key: left
+          value: Links
+        -
+          key: center
+          value: Mitte
+        -
+          key: right
+          value: Rechts
+      default: center
+      type: button_group
+      display: Positionierung
+      replicator_preview: false
+  -
+    handle: links
+    field:
+      type: replicator
+      display: Links
+      replicator_preview: false
+      sets:
+        new_set_group:
+          display: '-'
+          sets:
+            link:
+              display: Link
+              fields:
+                -
+                  import: link

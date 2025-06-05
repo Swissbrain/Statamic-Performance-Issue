@@ -1,0 +1,180 @@
+tabs:
+  website:
+    display: Website
+    sections:
+      -
+        display: Title
+        fields:
+          -
+            handle: title_options
+            field:
+              options:
+                none: None
+                logo: Logo
+                text: Text
+                text_and_logo: 'Logo and Text'
+              default: none
+              type: button_group
+              display: 'Title Options'
+          -
+            handle: website_title
+            field:
+              type: text
+              display: Title
+              width: 50
+              if:
+                title_options: 'contains text'
+          -
+            handle: logo
+            field:
+              max_files: 1
+              min_files: 1
+              container: images
+              type: assets
+              display: Logo
+              width: 50
+              if:
+                title_options: 'contains logo'
+      -
+        display: Colors
+        instructions: 'Choose the theme Colors for your Website'
+        fields:
+          -
+            handle: base_colors
+            field:
+              type: group
+              display: 'Base Colors'
+              fields:
+                -
+                  handle: primary
+                  field:
+                    type: color
+                    display: Primary
+                -
+                  handle: secondary
+                  field:
+                    type: color
+                    display: Secondary
+                -
+                  handle: accent
+                  field:
+                    type: color
+                    display: Accent
+          -
+            handle: font_colors
+            field:
+              type: group
+              display: 'Font Colors'
+              fields:
+                -
+                  handle: primary_font_color
+                  field:
+                    type: color
+                    display: 'Primary Font Color'
+                -
+                  handle: secondary_font_color
+                  field:
+                    type: color
+                    display: 'Secondary Font Color'
+          -
+            handle: component_colors
+            field:
+              type: group
+              display: 'Component Colors'
+              replicator_preview: false
+              fields:
+                -
+                  handle: header_background_color
+                  field:
+                    type: color
+                    display: 'Header Background Color'
+                -
+                  handle: header_text_color
+                  field:
+                    type: color
+                    display: 'Header Text Color'
+                -
+                  handle: empty
+                  field:
+                    type: spacer
+                    display: Empty
+                -
+                  handle: footer_background_color
+                  field:
+                    type: color
+                    display: 'Footer Background Color'
+                -
+                  handle: footer_text_color
+                  field:
+                    type: color
+                    display: 'Footer Text Color'
+                -
+                  handle: empty1
+                  field:
+                    type: spacer
+                    display: Empty
+                -
+                  handle: sub_footer_background_color
+                  field:
+                    type: color
+                    display: 'Sub Footer Background Color'
+                -
+                  handle: sub_footer_text_color
+                  field:
+                    type: color
+                    display: 'Sub Footer Text Color'
+                -
+                  handle: empty2
+                  field:
+                    type: spacer
+                    display: Empty
+                -
+                  handle: sidebar_background_color
+                  field:
+                    type: color
+                    display: 'Sidebar Background Color'
+                -
+                  handle: sidebar_item_color
+                  field:
+                    type: color
+                    display: 'Sidebar Item Color'
+                -
+                  handle: sidebar_item_hover_color
+                  field:
+                    type: color
+                    display: 'Sidebar Item Hover Color'
+                -
+                  handle: sidebar_text_color
+                  field:
+                    type: color
+                    display: 'Sidebar Text Color'
+  general:
+    display: General
+    sections:
+      -
+        display: Universal
+        instructions: 'Configure universal meta tags.'
+        fields:
+          -
+            import: 'statamic-peak-browser-appearance::globals_browser_appearance_general_universal'
+      -
+        display: Theme
+        instructions: 'Configure universal theme meta tags.'
+        fields:
+          -
+            import: 'statamic-peak-browser-appearance::globals_browser_appearance_general_theme'
+  favicons:
+    display: Favicons
+    sections:
+      -
+        display: Favicons
+        instructions: 'Configure favicons so they can be automatically generated.'
+        fields:
+          -
+            import: 'statamic-peak-browser-appearance::globals_browser_appearance_favicons'
+      -
+        display: Overrides
+        instructions: 'Override specific generated assets with your own.'
+        fields:
+          -
+            import: 'statamic-peak-browser-appearance::globals_browser_appearance_favicons_overrides'

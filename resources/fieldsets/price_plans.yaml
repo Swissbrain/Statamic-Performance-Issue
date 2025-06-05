@@ -1,0 +1,78 @@
+title: 'Preis Pläne'
+fields:
+  -
+    handle: plans
+    field:
+      collapse: true
+      type: replicator
+      display: Pläne
+      sets:
+        content:
+          display: Inhalt
+          sets:
+            plan:
+              display: Plan
+              fields:
+                -
+                  handle: plan_visibility
+                  field:
+                    options:
+                      normal: Normal
+                      featured: Hervorgehoben
+                      less: 'Nicht erwünscht'
+                    default: normal
+                    type: button_group
+                    display: 'Plan Hervorhebung'
+                    width: 50
+                    replicator_preview: false
+                -
+                  handle: plan_color
+                  field:
+                    type: color
+                    display: 'Plan Farbe'
+                    width: 50
+                    replicator_preview: false
+                -
+                  handle: name
+                  field:
+                    type: text
+                    display: Name
+                -
+                  import: wysiwyg
+                -
+                  handle: price
+                  field:
+                    type: float
+                    display: Preis
+                    replicator_preview: false
+                -
+                  handle: price_frequency
+                  field:
+                    type: text
+                    display: 'Preis Frequenz'
+                    instructions: Monat/Jahr...
+                    instructions_position: below
+                    replicator_preview: false
+                -
+                  handle: features
+                  field:
+                    type: list
+                    display: Features
+                    replicator_preview: false
+                -
+                  handle: link
+                  field:
+                    collections:
+                      - website
+                    container: images
+                    type: link
+                    display: 'Plan Verlinkung'
+                    replicator_preview: false
+                    width: 50
+                -
+                  handle: link_text
+                  field:
+                    type: text
+                    display: 'Link Text'
+                    width: 50
+                    replicator_preview: false

@@ -1,0 +1,34 @@
+title: Marken
+fields:
+  -
+    handle: brands
+    field:
+      type: replicator
+      display: Marken
+      collapse: true
+      replicator_preview: false
+      sets:
+        neue_set-gruppe:
+          display: '-'
+          sets:
+            brand:
+              display: Marke
+              fields:
+                -
+                  handle: logo
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: images
+                    type: assets
+                    display: Logo
+                    replicator_preview: false
+                -
+                  handle: link
+                  field:
+                    collections:
+                      - website
+                    container: images
+                    type: link
+                    display: Verlinkung
+                    replicator_preview: false

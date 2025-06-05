@@ -1,0 +1,40 @@
+title: Video
+fields:
+  -
+    handle: video_setting
+    field:
+      options:
+        -
+          key: video_local
+          value: Lokal
+        -
+          key: video_external
+          value: Extern
+      default: video_local
+      type: button_group
+      display: Typ
+      hide_display: true
+      always_save: true
+      replicator_preview: false
+  -
+    handle: video_local
+    field:
+      container: movies
+      type: assets
+      display: 'Video Lokal'
+      max_files: 1
+      always_save: true
+      if:
+        video_setting: 'equals video_local'
+      replicator_preview: false
+  -
+    handle: video_external
+    field:
+      type: video
+      display: 'Video Extern'
+      replicator_preview: false
+      always_save: true
+      if:
+        video_setting: 'equals video_external'
+  -
+    import: section_options

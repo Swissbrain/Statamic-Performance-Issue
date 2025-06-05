@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-accent: #2543a8;
+        --color-accent-content: #21387c;
+        --color-accent-foreground: #FFCC1A;
+    }
+}
+
+.wysiwyg {
+    p {
+        @apply mb-3;
+    }
+
+    p:last-child{
+        @apply mb-0;
+    }
+
+    h2 {
+        @apply text-2xl mb-3 mt-9;
+    }
+
+    h3 {
+        @apply text-xl mb-3 mt-9;
+    }
+
+    a {
+        @apply underline text-primary-500;
+    }
+
+    ul {
+        @apply pl-12 mb-6;
+
+        li {
+            @apply list-disc mb-3;
+
+            p {
+                @apply mb-0;
+            }
+        }
+    }
+    ol {
+        @apply pl-12 mb-6;
+
+        li {
+            @apply list-decimal mb-3;
+
+            p {
+                @apply mb-0;
+            }
+        }
+    }
+
+    blockquote {
+        @apply px-6 py-3 border-l-4 border-gray-100 italic text-gray-400 text-center inline-block mb-6;
+        p {
+            @apply mb-0;
+        }
+    }
+
+    table {
+        @apply mb-6 w-full;
+
+        th {
+            @apply text-start;
+        }
+        th, td {
+            @apply p-2 border align-top;
+        }
+    }
+}
+
+.print-only {
+    display: none;
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    .print-only {
+        display: block !important;
+    }
+    div[data-flux-main] {
+        margin-top: 0;
+    }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #007aff;
+    opacity: 1;
+    &:not(.swiper-pagination-bullet-active) {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}

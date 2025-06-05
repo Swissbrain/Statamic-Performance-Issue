@@ -1,0 +1,36 @@
+title: 'Call to Action'
+fields:
+  -
+    handle: size
+    field:
+      options:
+        -
+          key: limited
+          value: 'Begrenzt auf Content'
+        -
+          key: full
+          value: 'Ganze Breite'
+      default: limited
+      type: button_group
+      display: Grösse
+      replicator_preview: false
+      width: 50
+  -
+    handle: button_alignment
+    field:
+      options:
+        -
+          key: left
+          value: Links
+        -
+          key: center
+          value: Zentriert
+        -
+          key: right
+          value: Rechts
+      type: button_group
+      display: Button-Ausrichtung
+      width: 50
+      replicator_preview: false
+  -
+    import: image

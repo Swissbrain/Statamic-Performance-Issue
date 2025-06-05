@@ -1,0 +1,1 @@
+<div class="p-12 text-center bg-red-500 text-white font-bold">DEPCRECATED !</div>

@@ -1,0 +1,102 @@
+title: Tabs
+fields:
+  -
+    handle: tabs
+    field:
+      collapse: true
+      type: replicator
+      display: Tabs
+      sets:
+        content:
+          display: Inhalt
+          sets:
+            tab:
+              display: Tab
+              fields:
+                -
+                  handle: tab_title
+                  field:
+                    type: text
+                    display: 'Tab Titel'
+                -
+                  handle: tab_content_builder
+                  field:
+                    collapse: true
+                    type: replicator
+                    display: 'Dynamische Inhaltselemente'
+                    replicator_preview: false
+                    sets:
+                      text_and_image:
+                        display: 'Texte und Bilder'
+                        icon: text-formatting-wrap-image-left
+                        sets:
+                          title_subtitle:
+                            display: Titel/Untertitel
+                            icon: text-formatting-ampersand
+                            fields:
+                              -
+                                import: title_subtitle
+                          wysiwyg:
+                            display: 'Text Editor'
+                            icon: text-formatting-all-caps
+                            fields:
+                              -
+                                import: wysiwyg
+                          image:
+                            display: Image
+                            icon: media-image-picture-orientation
+                            fields:
+                              -
+                                import: image
+                          image_grid:
+                            display: 'Bild Raster'
+                            icon: dashboard-layout
+                            fields:
+                              -
+                                import: image_grid
+                          image_slider:
+                            display: 'Bild Slider'
+                            icon: media-image-picture-gallery
+                            fields:
+                              -
+                                import: image_slider
+                      structures:
+                        display: 'Struktur Elemente'
+                        icon: dashboard-layout-3
+                        sets:
+                          divider:
+                            display: Trennlinie
+                            icon: align-object-center
+                            fields:
+                              -
+                                import: divider
+                          columns:
+                            display: Spalten
+                            icon: layout-three-columns
+                            fields:
+                              -
+                                import: columns
+                      interaction:
+                        display: Interaktion
+                        icon: link
+                        sets:
+                          link:
+                            display: Link
+                            icon: link
+                            fields:
+                              -
+                                import: link
+                          links:
+                            display: Links
+                            icon: link
+                            fields:
+                              -
+                                import: links
+                          form:
+                            display: Formular
+                            icon: form-date-picker
+                            fields:
+                              -
+                                import: form
+  -
+    import: section_options

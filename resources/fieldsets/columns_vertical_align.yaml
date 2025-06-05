@@ -1,0 +1,19 @@
+title: 'Vertikale Ausrichtung (Spalten)'
+fields:
+  -
+    handle: vertical_align
+    field:
+      options:
+        -
+          key: top
+          value: Oben
+        -
+          key: center
+          value: Mitte
+        -
+          key: bottom
+          value: unten
+      default: top
+      type: button_group
+      display: 'Vertikale Ausrichtung'
+      replicator_preview: false

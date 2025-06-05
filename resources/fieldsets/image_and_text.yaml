@@ -1,0 +1,30 @@
+title: 'Bild und Text'
+fields:
+  -
+    handle: image_position
+    field:
+      options:
+        -
+          key: left
+          value: Links
+        -
+          key: right
+          value: Rechts
+      default: left
+      type: button_group
+      display: Bildposition
+      width: 33
+      replicator_preview: false
+  -
+    handle: images
+    field:
+      max_files: 1
+      container: images
+      type: assets
+      display: Bilder
+      instructions: 'Ein Bild wird normal angezeigt, aber wenn zwei ausgewählt werden, wird das zweite über das erste gelegt'
+      width: 66
+      instructions_position: below
+      replicator_preview: false
+  -
+    import: sub_content_builder

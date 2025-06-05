@@ -1,0 +1,131 @@
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        display: Event
+        fields:
+          -
+            handle: request_type
+            field:
+              options:
+                -
+                  key: reservation
+                  value: Reservation
+                -
+                  key: contact
+                  value: 'Kontaktaufnahme Telefonisch'
+              type: radio
+              display: Anfrage-Typ
+              replicator_preview: false
+          -
+            handle: event_start
+            field:
+              input_type: date
+              type: text
+              display: 'Anlass beginnt am'
+              width: 50
+              replicator_preview: false
+          -
+            handle: event_end
+            field:
+              input_type: date
+              type: text
+              display: 'Anlass endet am'
+              width: 50
+              replicator_preview: false
+          -
+            handle: time_of_day
+            field:
+              options:
+                -
+                  key: morning
+                  value: Morgen
+                -
+                  key: noon
+                  value: Mittag
+                -
+                  key: evening
+                  value: Abend
+                -
+                  key: whole_day
+                  value: 'Ganzer Tag'
+              type: select
+              display: Tageszeit
+              width: 50
+              replicator_preview: false
+          -
+            handle: guest_count
+            field:
+              type: integer
+              display: 'Anzahl geladene Gäste'
+              replicator_preview: false
+          -
+            handle: description
+            field:
+              type: textarea
+              display: 'Beschreibung des Anlasses'
+              replicator_preview: false
+      -
+        display: Kontaktdaten
+        fields:
+          -
+            handle: company
+            field:
+              type: text
+              display: 'Firma / Verein'
+              replicator_preview: false
+          -
+            handle: additional
+            field:
+              type: text
+              display: Zusatz
+              replicator_preview: false
+          -
+            handle: firstname
+            field:
+              type: text
+              display: Vorname
+              width: 50
+              replicator_preview: false
+          -
+            handle: lastname
+            field:
+              type: text
+              display: Nachname
+              width: 50
+              replicator_preview: false
+          -
+            handle: street
+            field:
+              type: text
+              display: 'Strasse / Nr.'
+          -
+            handle: zip_code
+            field:
+              type: integer
+              display: PLZ
+              width: 33
+              replicator_preview: false
+          -
+            handle: city
+            field:
+              type: text
+              display: Ort
+              width: 66
+              replicator_preview: false
+          -
+            handle: email
+            field:
+              input_type: email
+              type: text
+              display: E-Mail
+              width: 50
+              replicator_preview: false
+          -
+            handle: phone
+            field:
+              type: text
+              display: Telefon
+              width: 50
+              replicator_preview: false

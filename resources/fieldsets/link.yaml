@@ -1,0 +1,170 @@
+title: Link
+fields:
+  -
+    handle: link
+    field:
+      type: link
+      display: Link
+      collections:
+        - website
+      container: images
+      replicator_preview: false
+  -
+    handle: link_text
+    field:
+      type: text
+      display: 'Link Text'
+      width: 50
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      instructions: 'Erscheint als Tooltip'
+      width: 50
+      instructions_position: below
+      replicator_preview: false
+  -
+    handle: direction
+    field:
+      options:
+        -
+          key: left
+          value: Links
+        -
+          key: center
+          value: Zentriert
+        -
+          key: right
+          value: Rechts
+        -
+          key: full
+          value: 'Ganze Breite'
+      default: left
+      type: button_group
+      display: Ausrichtung
+      visibility: hidden
+      replicator_preview: false
+  -
+    handle: variant
+    field:
+      options:
+        -
+          key: primary
+          value: 'Morger Blau'
+        -
+          key: secondary
+          value: 'Morger Gelb'
+        -
+          key: active
+          value: 'Helles Blau'
+        -
+          key: filled-solid
+          value: 'Helles Grau'
+        -
+          key: outline
+          value: 'Weiss mit Rahmen'
+      searchable: false
+      default: primary
+      type: select
+      display: Variant
+      width: 33
+      replicator_preview: false
+  -
+    handle: target_blank
+    field:
+      type: toggle
+      display: 'In neuem Tab öffnen?'
+      width: 33
+      sortable: false
+      replicator_preview: false
+  -
+    handle: spacer_feld
+    field:
+      type: spacer
+      display: 'Spacer Feld'
+      width: 33
+      hide_display: true
+      replicator_preview: false
+  -
+    handle: icon
+    field:
+      options:
+        -
+          key: '-'
+          value: '-'
+        -
+          key: at-symbol
+          value: '@ Symbol'
+        -
+          key: bolt
+          value: Blitz
+        -
+          key: check
+          value: 'Check / Hacken'
+        -
+          key: document-text
+          value: 'Dokument / Datei'
+        -
+          key: printer
+          value: Drucker
+        -
+          key: envelope
+          value: E-Mail
+        -
+          key: shopping-bag
+          value: Einkaufskorb
+        -
+          key: shopping-cart
+          value: Einkaufswagen
+        -
+          key: question-mark-circle
+          value: 'Fragezeichen umrandet'
+        -
+          key: bell-alert
+          value: Glocke
+        -
+          key: hand-thumb-up
+          value: 'Like / Daumen hoch'
+        -
+          key: link
+          value: 'Link Symbol'
+        -
+          key: magnifying-glass
+          value: Lupe
+        -
+          key: plus
+          value: Plus
+        -
+          key: chat-bubble-left-right
+          value: Sprechblasen
+        -
+          key: share
+          value: 'Share / Teilen'
+        -
+          key: phone
+          value: Telefon
+        -
+          key: clock
+          value: Uhr
+      type: select
+      display: Icon
+      width: 33
+      replicator_preview: false
+  -
+    handle: icon_position
+    field:
+      options:
+        -
+          key: left
+          value: 'Vor dem Text'
+        -
+          key: right
+          value: 'Nach dem Text'
+      default: left
+      type: button_group
+      display: 'Icon Position'
+      width: 66
+      replicator_preview: false
+  -
+    import: section_options

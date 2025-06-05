@@ -1,0 +1,150 @@
+tabs:
+  general:
+    display: General
+    sections:
+      -
+        display: 'System pages'
+        instructions: 'Configure system pages.'
+        fields:
+          -
+            handle: error_404_entry
+            field: common.entry
+            config:
+              display: '404'
+              width: 50
+              instructions: 'Show all content of page whenever an URL does not exist.'
+              collections:
+                - website
+              validate:
+                - required
+      -
+        display: 'Privacy statement'
+        instructions: 'Configure an optional privacy statement.'
+        fields:
+          -
+            handle: privacy_statement_type
+            field:
+              options:
+                none: None
+                entry: Entry
+                pdf: PDF
+              default: none
+              type: button_group
+              instructions: 'Form consent fields will link to this Privacy Policy.'
+              instructions_position: below
+              listable: false
+              localizable: true
+              display: 'Privacy statement'
+              width: 50
+          -
+            handle: privacy_statement_asset
+            field: common.image
+            config:
+              container: documents
+              localizable: true
+              display: 'Privacy statement (PDF)'
+              listable: hidden
+              width: 50
+              if:
+                privacy_statement_type: 'equals pdf'
+              validate:
+                - 'required_if:privacy_statement_type,pdf'
+          -
+            handle: privacy_statement_entry
+            field: common.entry
+            config:
+              localizable: true
+              listable: hidden
+              display: 'Privacy statement (entry)'
+              width: 50
+              if:
+                privacy_statement_type: 'equals entry'
+              validate:
+                - 'required_if:privacy_statement_type,entry'
+      -
+        display: 'Cookie notice'
+        instructions: 'Configure an optional cookie notice.'
+        fields:
+          -
+            handle: cookie_notice_type
+            field:
+              options:
+                none: None
+                entry: Entry
+                pdf: PDF
+              default: none
+              type: button_group
+              instructions: 'The Cookie Banner will link to this Cookie Notice.'
+              instructions_position: below
+              listable: false
+              localizable: true
+              display: 'Cookie notice'
+              width: 50
+          -
+            handle: cookie_notice_asset
+            field: common.image
+            config:
+              container: documents
+              localizable: true
+              display: 'Cookie notice (PDF)'
+              listable: hidden
+              width: 50
+              if:
+                cookie_notice_type: 'equals pdf'
+              validate:
+                - 'required_if:cookie_notice_type,pdf'
+          -
+            handle: cookie_notice_entry
+            field: common.entry
+            config:
+              localizable: true
+              listable: hidden
+              display: 'Cookie notice (entry)'
+              width: 50
+              if:
+                cookie_notice_type: 'equals entry'
+              validate:
+                - 'required_if:cookie_notice_type,entry'
+      -
+        display: 'Terms and Conditions'
+        fields:
+          -
+            handle: tos_type
+            field:
+              options:
+                none: None
+                entry: Entry
+                pdf: PDF
+              default: none
+              type: button_group
+              instructions: 'Select the type of Terms and Conditions.'
+              instructions_position: below
+              listable: false
+              localizable: true
+              display: 'Terms and Conditions'
+              width: 50
+          -
+            handle: tos_asset
+            field: common.image
+            config:
+              container: documents
+              localizable: true
+              display: 'Terms and Conditions (PDF)'
+              listable: hidden
+              width: 50
+              if:
+                tos_type: 'equals pdf'
+              validate:
+                - 'required_if:tos_type,pdf'
+          -
+            handle: tos_entry
+            field: common.entry
+            config:
+              localizable: true
+              listable: hidden
+              display: 'Terms and Conditions (entry)'
+              width: 50
+              if:
+                tos_type: 'equals entry'
+              validate:
+                - 'required_if:tos_type,entry'

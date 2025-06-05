@@ -1,0 +1,31 @@
+title: 'Feature Tabelle'
+fields:
+  -
+    handle: feature_table
+    field:
+      type: table
+      display: 'Feature Tabelle'
+      instructions: |-
+        Folgende eingaben werden automatisch mit einem Icon ersetzt:
+        Ja -> Haken; Nein -> X; - -> Linie;
+      replicator_preview: false
+  -
+    handle: content_hidden
+    field:
+      type: toggle
+      display: 'Inhalt versteckt'
+      width: 33
+      replicator_preview: false
+  -
+    handle: hidden_px
+    field:
+      default: '150'
+      type: integer
+      display: 'Sichtbare Pixel'
+      width: 66
+      if:
+        content_hidden: 'equals true'
+      validate:
+        - 'min:150'
+        - 'max:1000'
+      replicator_preview: false
